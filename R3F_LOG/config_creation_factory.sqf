@@ -53,26 +53,26 @@ R3F_LOG_CFG_CF_sell_back_bargain_rate = 0.75;
  */
 R3F_LOG_CFG_CF_whitelist_light_categories =
 [
-	["Objects"],                          // Objects (1 entries)
-	["Armory"],                           // Armory (0 entries)
-	["Targets"],                          // Targets (0 entries)
-	["Cargo"],                            // Objects (Construction) (43 entries)
-	["Flag"],                             // Objects (Flags) (35 entries)
-	["Lamps"],                            // Objects (Lamps) (0 entries)
-	["Communication"],                    // Objects (Communications) (0 entries)
-	["Furniture"],                        // Objects (Furniture) (22 entries)
-	["Misc"],                             // Objects (0 entries)
-	["Signs"],                            // Objects (Signs) (50 entries)
-	["Small_items"],                      // Objects (Small) (88 entries)
-	["Training"],                         // Training (80 entries)
-	["Shelters"],                         // Objects (Shelters) (0 entries)
-	["Fortifications"],                   // Objects (Fortifications) (47 entries)
-	["Tents"],                            // Objects (Camping) (46 entries)
-	["Market"],                           // Objects (Market) (11 entries)
-	["Structures"],                       // Structures (0 entries)
-	["Structures_Military"],              // Structures (Military) (12 entries)
-	["Structures_Walls"],                 // Structures (Walls) (0 entries)
-	["Structures_Fences"]                 // Structures (Fences) (1 entries)
+	"Objects",                          // Objects (1 entries)
+	"Armory",                           // Armory (0 entries)
+	"Targets",                          // Targets (0 entries)
+	"Cargo",                            // Objects (Construction) (43 entries)
+	"Flag",                             // Objects (Flags) (35 entries)
+	"Lamps",                            // Objects (Lamps) (0 entries)
+	"Communication",                    // Objects (Communications) (0 entries)
+	"Furniture",                        // Objects (Furniture) (22 entries)
+	"Misc",                             // Objects (0 entries)
+	"Signs",                            // Objects (Signs) (50 entries)
+	"Small_items",                      // Objects (Small) (88 entries)
+	"Training",                         // Training (80 entries)
+	"Shelters",                         // Objects (Shelters) (0 entries)
+	"Fortifications",                   // Objects (Fortifications) (47 entries)
+	"Tents",                            // Objects (Camping) (46 entries)
+	"Market",                           // Objects (Market) (11 entries)
+	"Structures",                       // Structures (0 entries)
+	"Structures_Military",              // Structures (Military) (12 entries)
+	"Structures_Walls",                 // Structures (Walls) (0 entries)
+	"Structures_Fences"                 // Structures (Fences) (1 entries)
 ];
 
 /**
@@ -82,17 +82,17 @@ R3F_LOG_CFG_CF_whitelist_light_categories =
  */
 R3F_LOG_CFG_CF_whitelist_medium_categories = R3F_LOG_CFG_CF_whitelist_light_categories +
 [
-	["Ammo"],                             // Ammo (49 entries)
-	["Static"],                           // Static (28 entries)
-	["Container"],                        // Objects (Containers) (39 entries)
-	["Objects_Airport"],                  // Objects (Airport) (20 entries)
+	"Ammo",                             // Ammo (49 entries)
+	"Static",                           // Static (28 entries)
+	"Container",                        // Objects (Containers) (39 entries)
+	"Objects_Airport",                  // Objects (Airport) (20 entries)
 
 	// All in Arma
-	["StaticW"],                          // Static (woodland) (4 entries)
-	["Static_ChDKZ"],                     // Static (Insurgency) (0 entries)
-	["Static_USMC"],                      // Static (USMC) (0 entries)
-	["Static_RU"],                        // Static (RU) (0 entries)
-	["Static_CDF"]                        // Static (CDF) (0 entries)
+	"StaticW",                          // Static (woodland) (4 entries)
+	"Static_ChDKZ",                     // Static (Insurgency) (0 entries)
+	"Static_USMC",                      // Static (USMC) (0 entries)
+	"Static_RU",                        // Static (RU) (0 entries)
+	"Static_CDF"                        // Static (CDF) (0 entries)
 ];
 
 /**
@@ -102,56 +102,56 @@ R3F_LOG_CFG_CF_whitelist_medium_categories = R3F_LOG_CFG_CF_whitelist_light_cate
  */
 R3F_LOG_CFG_CF_whitelist_full_categories = R3F_LOG_CFG_CF_whitelist_medium_categories +
 [
-	["Car"],                              // Cars (42 entries)
-	["Armored"],                          // Armored (16 entries)
-	["Air"],                              // Air (19 entries)
-	["Support"],                          // Supports (21 entries)
-	["Ship"],                             // Ships (13 entries)
-	["Autonomous"],                       // Autonomous (15 entries)
-	["Submarine"],                        // Submarines (3 entries)
-	["Wreck"],                            // Wrecks (24 entries)
-	["Wreck_sub"],                        // Wrecks (Submerged) (5 entries)
-	["Military"],                         // Objects (Military) (9 entries)
-	["Structures_Commercial"],            // Structures (Commercial) (1 entries)
-	["Structures_Infrastructure"],        // Structures (Infrastructure) (1 entries)
-	["Structures_Town"],                  // Structures (Town) (4 entries)
-	["Structures_Cultural"],              // Structures (Cultural) (0 entries)
-	["Structures_Industrial"],            // Structures (Industrial) (0 entries)
-	["Structures_Transport"],             // Structures (Transport) (0 entries)
-	["Structures_Village"],               // Structures (Village) (0 entries)
-	["Structures_Slums"],                 // Structures (Slums) (0 entries)
-	["Structures_Airport"],               // Structures (Airport) (0 entries)
+	"Car",                              // Cars (42 entries)
+	"Armored",                          // Armored (16 entries)
+	"Air",                              // Air (19 entries)
+	"Support",                          // Supports (21 entries)
+	"Ship",                             // Ships (13 entries)
+	"Autonomous",                       // Autonomous (15 entries)
+	"Submarine",                        // Submarines (3 entries)
+	"Wreck",                            // Wrecks (24 entries)
+	"Wreck_sub",                        // Wrecks (Submerged) (5 entries)
+	"Military",                         // Objects (Military) (9 entries)
+	"Structures_Commercial",            // Structures (Commercial) (1 entries)
+	"Structures_Infrastructure",        // Structures (Infrastructure) (1 entries)
+	"Structures_Town",                  // Structures (Town) (4 entries)
+	"Structures_Cultural",              // Structures (Cultural) (0 entries)
+	"Structures_Industrial",            // Structures (Industrial) (0 entries)
+	"Structures_Transport",             // Structures (Transport) (0 entries)
+	"Structures_Village",               // Structures (Village) (0 entries)
+	"Structures_Slums",                 // Structures (Slums) (0 entries)
+	"Structures_Airport",               // Structures (Airport) (0 entries)
 
 	// All in Arma
-	["WarfareBuildingsClassname"],        // Warfare Buildings (79 entries)
-	["CarW"],                             // Cars (woodland) (10 entries)
-	["Military_With_side"],               // Military (36 entries)
-	["WarfareClassName"],                 // Warfare (16 entries)
+	"WarfareBuildingsClassname",        // Warfare Buildings (79 entries)
+	"CarW",                             // Cars (woodland) (10 entries)
+	"Military_With_side",               // Military (36 entries)
+	"WarfareClassName",                 // Warfare (16 entries)
 
 	//RHS
-	["rhs_vehclass_truck"],
-	["rhs_vehclass_tank"],
-	["rhs_vehclass_mrap"],
-	["rhs_vehclass_car"],
-	["class rhs_vehclass_car"],
-	["rhs_vehclass_apc"],
-	["rhs_vehclass_ifv"],
-	["rhs_vehclass_helicopter"],
-	["rhs_vehclass_artillery"],
-	["rhs_vehclass_aa"],
-	["rhs_vehclass_aircraft"]
+	"rhs_vehclass_truck",
+	"rhs_vehclass_tank",
+	"rhs_vehclass_mrap",
+	"rhs_vehclass_car",
+	"class rhs_vehclass_car",
+	"rhs_vehclass_apc",
+	"rhs_vehclass_ifv",
+	"rhs_vehclass_helicopter",
+	"rhs_vehclass_artillery",
+	"rhs_vehclass_aa",
+	"rhs_vehclass_aircraft"
 ];
 
 
 R3F_LOG_CFG_CF_whitelist_default_categories = R3F_LOG_CFG_CF_whitelist_full_categories +
 [
    	//ACE
-   	["ACE_Logistics_Items"],
+   	"ACE_Logistics_Items",
 
    	//Object classes
 
    	/*fortifications*/
-   	/*"Land_HBarrier_3_F",
+   	"Land_HBarrier_3_F",
 	"Land_HBarrier_5_F",
 	"Land_HBarrier_Big_F",
 	"Land_HBarrier_1_F",
@@ -196,8 +196,8 @@ R3F_LOG_CFG_CF_whitelist_default_categories = R3F_LOG_CFG_CF_whitelist_full_cate
 	"ACE_Wheel",
 	"ACE_ConcertinaWireCoil",
 	"Land_PortableLight_single_F",
-	"Land_PortableLight_double_F"*/
-	["Land_PortableLight_double_F", 5000]
+	"Land_PortableLight_double_F"
+	//["Land_PortableLight_double_F", 5000]
 ];
 
 R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
