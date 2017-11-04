@@ -1,0 +1,271 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=262;
+	};
+	class Camera
+	{
+		pos[]={728.88196,5.9921207,971.20526};
+		dir[]={-0.068106189,-0.2991243,0.95192683};
+		up[]={-0.021352444,0.95420754,0.29844475};
+		aside[]={0.99754739,1.2987293e-006,0.071369305};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"CUP_Misc_e_Config",
+	"CUP_CAMP_Armory_Misc_Infostands",
+	"Desert",
+	"A3_Modules_F",
+	"A3_Characters_F"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=5;
+		class Item0
+		{
+			className="CUP_Misc_e_Config";
+			name="CUP_Misc_e_Config";
+		};
+		class Item1
+		{
+			className="CUP_CAMP_Armory_Misc_Infostands";
+			name="CUP_CAMP_Armory_Misc_Infostands";
+		};
+		class Item2
+		{
+			className="Desert";
+			name="Desert";
+		};
+		class Item3
+		{
+			className="A3_Modules_F";
+			name="Arma 3 Alpha - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+	};
+};
+randomSeed=13004189;
+class ScenarioData
+{
+	author="AlmightyShotgun";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.19999999;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.25;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		rainForced=1;
+		lightningsForced=1;
+		wavesForced=1;
+		windForced=1;
+		year=2010;
+		month=6;
+		day=11;
+		hour=10;
+		minute=20;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=6;
+		class Item0
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={728.19202,4.917027,972.77698};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [west_factory, -1, west, ""WEST""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
+				name="west_factory";
+			};
+			id=4;
+			type="Infostand_2_EP1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={725.05798,4.917027,973.01898};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [east_factory, -1, east,""LIGHT""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
+				name="east_factory";
+			};
+			id=19;
+			type="Infostand_2_EP1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item2
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={724.92706,4.3367691,913.49951};
+			};
+			title="WEST setFriend [EAST,1]; EAST setFriend [WEST,1] ";
+			description="set east and west friendly";
+			id=22;
+		};
+		class Item3
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={729.6076,4.3367691,910.52539};
+			};
+			init="call{WEST setFriend [EAST,1]; EAST setFriend [WEST,1] }";
+			id=27;
+			type="Logic";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={730.64606,4.917027,972.57123};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{nul = [west_factory_1, -1, west] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
+				name="west_factory_1";
+			};
+			id=37;
+			type="Infostand_2_EP1";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={728.07196,4.3382082,971.84973};
+						angles[]={0,0.075294614,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=59;
+					type="B_officer_F";
+				};
+			};
+			class Attributes
+			{
+			};
+			id=58;
+		};
+	};
+};
