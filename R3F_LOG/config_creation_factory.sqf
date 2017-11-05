@@ -392,7 +392,7 @@ R3F_LOG_CFG_CF_blacklist_categories =
  */
 R3F_LOG_CFG_CF_creation_cost_factor =
 [
-	["Car", 12],
+	//["Car", 12],
 	["Armored", 15],
 	["Air", 15],
 	["Support", 100],
