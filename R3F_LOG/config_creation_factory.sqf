@@ -434,4 +434,5 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["rhsusf_mrzr4_w", 1],
 	["rhsusf_mrzr4_o", 1],
 	["rhsusf_mrzr4_d", 1]
+
 ];
