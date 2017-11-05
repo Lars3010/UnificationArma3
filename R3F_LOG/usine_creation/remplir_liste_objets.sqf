@@ -35,6 +35,7 @@ if (count (_usine getVariable "R3F_LOG_CF_cfgVehicles_par_categories") > 0) then
 		private ["_classe", "_config", "_nom", "_icone", "_cout", "_tab_icone", "_index"];
 
 		_classe = _x;
+		player sideChat(format["%1",_classe]);
 		_config = configFile >> "CfgVehicles" >> _classe;
 		_nom = getText (_config >> "displayName");
 		_icone = getText (_config >> "icon");

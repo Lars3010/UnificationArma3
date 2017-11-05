@@ -392,7 +392,7 @@ R3F_LOG_CFG_CF_blacklist_categories =
  */
 R3F_LOG_CFG_CF_creation_cost_factor =
 [
-	//["Car", 12],
+	["Car", 12],
 	["Armored", 15],
 	["Air", 15],
 	["Support", 100],
@@ -423,7 +423,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["WarfareClassName", 50],
 
 	["rhsusf_m998_w_4dr", 1],
-	["rhsusf_m998_w_4dr_halftop", 1],
+	["rhsusf_m998_w_4dr_halftop", 70],
 	["rhsusf_m998_w_4dr_fulltop", 1],
 	["rhsusf_m998_w_2dr_halftop", 1],
 	["rhsusf_m998_w_2dr", 1],
