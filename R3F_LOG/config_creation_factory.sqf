@@ -420,7 +420,18 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["CarD", 60],
 	["CarW", 60],
 	["Military_With_side", 1000],
-	["WarfareClassName", 50]
+	["WarfareClassName", 50],
 
-	//["RHS_M252_WD",900]
+	["rhsusf_m998_w_4dr", 1],
+	["rhsusf_m998_w_4dr_halftop", 1],
+	["rhsusf_m998_w_4dr_fulltop", 1],
+	["rhsusf_m998_w_2dr_halftop", 1],
+	["rhsusf_m998_w_2dr", 1],
+	["rhsusf_m998_w_2dr_fulltop", 1],
+	["rhsusf_m1025_w", 1],
+	["rhsusf_m1025_w_m2", 1],
+	["rhsusf_m1025_w_mk19", 1],
+	["rhsusf_mrzr4_w", 1],
+	["rhsusf_mrzr4_o", 1],
+	["rhsusf_mrzr4_d", 1]
 ];
