@@ -20,33 +20,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
- /*[
- 	["Sand Bags", "Bunkers", "Statics"], <- categories
-
- 	[
- 		["Land_BagFence_Corner_F",
- 		"Land_BagFence_End_F",
- 		"Land_BagFence_Long_F",
- 		"Land_BagFence_Round_F",
- 		"Land_BagFence_Round_F",
- 		"Land_BagFence_Short_F"],
-
- 		[
- 			"Land_BagBunker_Small_F",
- 			"Land_BagBunker_Tower_F"
- 		],
-
- 		[
- 			"B_HMG_01_high_F"
- 		]
- 	],
-
- 	[
- 		[10, 10, 10, 10, 10, 10],
- 		[100, 500],
- 		[200]
- 	]
- ]*/
 
 private ["_usine", "_montrer_categories_vides", "_nb_config", "_idx_categorie", "_idx_config", "_config", "_side", "_setting"];
 private ["_cfgVehicles_categories", "_cfgVehicles_categories_toLower", "_cfgVehicles_par_categories", "_clean_cfgVehicles_categories", "_clean_cfgVehicles_par_categories"];
@@ -97,16 +70,7 @@ for [{_idx_config = 0}, {_idx_config < _nb_config}, {_idx_config = _idx_config+1
 
 				if (_idx_categorie != -1) then
 				{
-					// Check if the object/vehicle is not blacklisted
-					/*if !(configName _config in R3F_LOG_CF_blacklist_objects) then
-					{
-						(_cfgVehicles_par_categories select _idx_categorie) pushBack (configName _config); //see if you can invert this statement and allow it to whitelist instead
-					};*/
-
-					//_usine getVariable "R3F_LOG_CF_blackwhitelist_categories";
-					/*_list = _usine getVariable "R3F_LOG_CF_blackwhitelist_categories";*/
 					_side = _usine getVariable "R3F_LOG_CF_num_sides" select 0;
-					//player sideChat(format["%1",_side]);
 					switch (_side) do
 					{
 					    //cases (insertable by snippet)
@@ -115,12 +79,11 @@ for [{_idx_config = 0}, {_idx_config < _nb_config}, {_idx_config = _idx_config+1
 						case 2: {_setting = R3F_LOG_CF_independent_objects};
 						default {_setting = R3F_LOG_CFG_CF_whitelist_default_categories};
 					};
-					//player globalChat( format["%1",_cfgVehicles_par_categories]);
+
 					//_setting = R3F_LOG_CFG_CF_whitelist_light_categories;
 					if (configName _config in _setting) then //Get whitelist dynamicly instead of static
 					{
 						(_cfgVehicles_par_categories select _idx_categorie) pushBack (configName _config);
-						//player sideChat(format["%1",_idx_categorie]);
 					};
 				};
 			};

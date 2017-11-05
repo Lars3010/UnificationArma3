@@ -139,16 +139,15 @@ R3F_LOG_CFG_CF_whitelist_full_categories = R3F_LOG_CFG_CF_whitelist_medium_categ
 	"rhs_vehclass_helicopter",
 	"rhs_vehclass_artillery",
 	"rhs_vehclass_aa",
-	"rhs_vehclass_aircraft"
+	"rhs_vehclass_aircraft",
+
+	//ACE
+   	"ACE_Logistics_Items"
 ];
 
 
 R3F_LOG_CFG_CF_whitelist_default_categories = R3F_LOG_CFG_CF_whitelist_full_categories +
 [
-   	//ACE
-   	"ACE_Logistics_Items",
-
-   	//Object classes
 
    	/*fortifications*/
    	"Land_HBarrier_3_F",
@@ -197,15 +196,10 @@ R3F_LOG_CFG_CF_whitelist_default_categories = R3F_LOG_CFG_CF_whitelist_full_cate
 	"ACE_ConcertinaWireCoil",
 	"Land_PortableLight_single_F",
 	"Land_PortableLight_double_F"
-	//["Land_PortableLight_double_F", 5000]
 ];
 
 R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 [
-    //categories
-
-    /*classes*/
-
 	//trucks
 	"rhsusf_M1078A1P2_WD_fmtv_usarmy",
 	"rhsusf_M1078A1P2_B_WD_fmtv_usarmy",
@@ -274,9 +268,6 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 	"rhsusf_m1025_w",
 	"rhsusf_m1025_w_m2",
 	"rhsusf_m1025_w_mk19",
-	"rhsusf_mrzr4_w",
-	"rhsusf_mrzr4_o",
-	"rhsusf_mrzr4_d",
 
 	//statics - turrets
 	"RHS_MK19_TriPod_WD",
@@ -392,36 +383,6 @@ R3F_LOG_CFG_CF_blacklist_categories =
  */
 R3F_LOG_CFG_CF_creation_cost_factor =
 [
-	["Car", 12],
-	["Armored", 15],
-	["Air", 15],
-	["Support", 100],
-	["Ammo", 5000],
-	["Ship", 8],
-	["Static", 3],
-	["Autonomous", 10],
-	["Submarine", 1500],
-	["Wreck", 100],
-	["Wreck_sub", 100],
-	["Cargo", 10],
-	["Container", 5],
-	["Objects_Airport", 50],
-	//["Structures_Military", 5],
-
-	// All in Arma
-	["StaticW", 3],
-	["Military_US_EP1", 8000],
-	["Military_TKA_EP1", 8000],
-	["Military_GUE_EP1", 8000],
-	["SupportWoodland_ACR", 70],
-	["WarfareBuildingsClassname", 100],
-	["ArmouredD", 5],
-	["ArmouredW", 20],
-	["CarD", 60],
-	["CarW", 60],
-	["Military_With_side", 1000],
-	["WarfareClassName", 50],
-
 	["rhsusf_m998_w_4dr", 1],
 	["rhsusf_m998_w_4dr_halftop", 70],
 	["rhsusf_m998_w_4dr_fulltop", 1],
@@ -430,9 +391,6 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["rhsusf_m998_w_2dr_fulltop", 1],
 	["rhsusf_m1025_w", 1],
 	["rhsusf_m1025_w_m2", 1],
-	["rhsusf_m1025_w_mk19", 1],
-	["rhsusf_mrzr4_w", 1],
-	["rhsusf_mrzr4_o", 1],
-	["rhsusf_mrzr4_d", 1]
+	["rhsusf_m1025_w_mk19", 80]
 
 ];

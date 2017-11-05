@@ -16,10 +16,8 @@ private ["_classe", "_categorie_toLower", "_idx_facteur_cout", "_facteur_cout", 
 
 _classe = _this select 0;
 
-_categorie_toLower = toLower getText (configFile >> "CfgVehicles" >> _classe >> "vehicleClass");
-//_categorie_toLower = toLower getText (configFile >> "CfgVehicles" >> _classe);
+_categorie_toLower = toLower _classe;
 
-//player sideChat(format["%1",_categorie_toLower]);
 // Recherche de l'�ventuel facteur de co�t de cr�ation
 // Search for the potential cost factor for creation
 _facteur_cout = 1;
@@ -29,6 +27,6 @@ _facteur_cout = 1;
 
 // Formule de calcul de co�t
 // Cost calculation formula
-_cout_creation = _facteur_cout * (1 max ceil (0.01 * getNumber (configFile >> "CfgVehicles" >> _classe >> "cost")));
+_cout_creation = _facteur_cout;
 
 _cout_creation
