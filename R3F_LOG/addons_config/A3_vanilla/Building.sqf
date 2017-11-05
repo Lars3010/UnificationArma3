@@ -93,5 +93,53 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"land_plasticbarrier_02_f",
 	"bagbunker_base_f",
 	"bagfence_base_f",
-	"flagcarriercore"
+	"flagcarriercore",
+
+
+	"Land_HBarrier_3_F",
+	"Land_HBarrier_5_F",
+	"Land_HBarrier_Big_F",
+	"Land_HBarrier_1_F",
+	"Land_HBarrierWall_corridor_F",
+	"Land_HBarrierWall_corner_F",
+	"Land_HBarrierWall6_F",
+	"Land_HBarrierWall4_F",
+	"Land_HBarrierTower_F",
+	"Land_Mil_WallBig_4m_F",
+	"Land_Mil_WallBig_Corner_F",
+
+	"Land_BagFence_Corner_F",
+	"Land_BagFence_End_F",
+	"Land_BagFence_Long_F",
+	"Land_BagFence_Round_F",
+	"Land_BagFence_Short_F",
+	"Land_BagBunker_Large_F",
+	"Land_BagBunker_Small_F",
+	"Land_SandbagBarricade_01_hole_F",
+	"Land_SandbagBarricade_01_half_F",
+	"Land_SandbagBarricade_01_F",
+
+	"Land_CzechHedgehog_01_F",
+	"Land_Bunker_01_small_F",
+	"Land_Bunker_01_big_F",
+	"Land_Bunker_01_HQ_F",
+	"Land_Bunker_01_blocks_3_F",
+	"Land_Bunker_01_blocks_1_F",
+
+	"Land_Razorwire_F",
+	"Land_BarGate_F",
+
+	//signs
+	"Land_Sign_MinesDanger_English_F",
+	"Land_Sign_MinesTall_English_F",
+	"Land_SignM_WarningMilitaryArea_english_F",
+
+   	//ace
+   	"ACE_TripodObject",
+   	"RoadBarrier_F",
+	"ACE_Track",
+	"ACE_Wheel",
+	"ACE_ConcertinaWireCoil",
+	"Land_PortableLight_single_F",
+	"Land_PortableLight_double_F"
 ];

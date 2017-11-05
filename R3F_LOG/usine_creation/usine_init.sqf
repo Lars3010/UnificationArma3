@@ -122,7 +122,6 @@ if (isNil {_usine getVariable "R3F_LOG_CF_blackwhitelist_categories"}) then
 	// Conversion des cat�gories en lettres minuscules - Converting Categories to Lowercase
 	_blackwhitelist_categories_toLower = [];
 	{
-		player sideChat(format["%1",_x]);
 		_blackwhitelist_categories_toLower pushBack toLower _x;
 	} forEach (_usine getVariable "R3F_LOG_CF_blackwhitelist_categories");
 	_usine setVariable ["R3F_LOG_CF_blackwhitelist_categories", _blackwhitelist_categories_toLower, false];

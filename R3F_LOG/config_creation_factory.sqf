@@ -142,7 +142,10 @@ R3F_LOG_CFG_CF_whitelist_full_categories = R3F_LOG_CFG_CF_whitelist_medium_categ
 	"rhs_vehclass_aircraft",
 
 	//ACE
-   	"ACE_Logistics_Items"
+   	"ACE_Logistics_Items",
+
+	//Project opfor
+	"LOP_Armored"
 ];
 
 
@@ -240,10 +243,25 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "rhsusf_m1a2sep1tuskiwd_usarmy",
     "rhsusf_m1a2sep1tuskiiwd_usarmy",
 
+	"CUP_B_M60A3_USMC",
+
+	"CUP_B_M1130_CV_M2_Woodland",
+	"CUP_B_M1130_CV_M2_Woodland_Slat",
+	"CUP_B_M1128_MGS_Woodland",
+	"CUP_B_M1128_MGS_Woodland_Slat",
+
     //Trucks
     "rhsusf_M1078A1P2_WD_fmtv_usarmy",
     "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy",
     "rhsusf_M977A4_usarmy_wd",
+	"rhsusf_M978A4_usarmy_wd",
+	"rhsusf_M977A4_REPAIR_usarmy_wd",
+
+	//Cars (trucks cause CUP)
+	"CUP_B_MTVR_USMC",
+	"CUP_B_MTVR_Ammo_USMC",
+	"CUP_B_MTVR_Refuel_USMC",
+	"CUP_B_MTVR_Repair_USMC",
 
     //Aircraft
     "RHS_A10",
@@ -252,7 +270,12 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "RHS_AH64D_wd",
     "RHS_CH_47F",
     "RHS_UH60M",
-    "RHS_UH60M2"
+    "RHS_UH60M2",
+
+	//Air (helicopters)
+	"CUP_B_UH1D_slick_GER_KSK_Des",
+	"CUP_B_UH1D_GER_KSK_Des",
+	"RHS_MELB_MH6M"
 
 ];
 
@@ -321,6 +344,7 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "rhs_t90_tv",
     "rhs_t90a_tv",
     "LOP_AFR_OPF_T34",
+	"LOP_AFR_OPF_T55",
 
     //Helicopters
     "RHS_Mi8mt_vdv",
@@ -333,7 +357,7 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 
 R3F_LOG_CF_independent_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 [
-	//"Fortifications"
+
 ];
 
 /**
@@ -431,7 +455,9 @@ R3F_LOG_CFG_CF_blacklist_categories =
  */
 R3F_LOG_CFG_CF_creation_cost_factor =
 [
-    //RHS Blufor Prices
+	//Building prices
+
+    //Blufor Prices
     ["rhsusf_m113_usarmy", 1],
     ["rhsusf_m113_usarmy_M240", 1],
     ["rhsusf_m113_usarmy_MK19", 1],
@@ -469,17 +495,34 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhsusf_m1a2sep1tuskiwd_usarmy", 1],
     ["rhsusf_m1a2sep1tuskiiwd_usarmy", 1],
 
+	["CUP_B_M60A3_USMC", 1],
+	["CUP_B_M1130_CV_M2_Woodland", 1],
+	["CUP_B_M1130_CV_M2_Woodland_Slat", 1],
+	["CUP_B_M1128_MGS_Woodland", 1],
+	["CUP_B_M1128_MGS_Woodland_Slat", 1],
+
     ["rhsusf_M1078A1P2_WD_fmtv_usarmy", 1],
     ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", 1],
     ["rhsusf_M977A4_usarmy_wd", 1],
+	["rhsusf_M978A4_usarmy_wd", 1],
+	["rhsusf_M977A4_REPAIR_usarmy_wd", 1],
+
+	["CUP_B_MTVR_USMC", 1],
+	["CUP_B_MTVR_Ammo_USMC", 1],
+	["CUP_B_MTVR_Refuel_USMC", 1],
+	["CUP_B_MTVR_Repair_USMC", 1],
 
     ["RHS_A10", 1],
     ["RHS_AH64D_wd", 1],
     ["RHS_CH_47F", 1],
     ["RHS_UH60M", 1],
     ["RHS_UH60M2", 1],
+	["RHS_MELB_MH6M", 1],
 
-	//RHS Redfor Prices
+	["CUP_B_UH1D_slick_GER_KSK_Des", 1],
+	["CUP_B_UH1D_GER_KSK_Des", 1],
+
+	//Opfor Prices
 	["rhs_btr60_vdv", 1],
     ["rhs_btr70_msv", 1],
     ["rhs_btr80_msv", 1],
@@ -537,6 +580,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhs_t90_tv", 1],
     ["rhs_t90a_tv", 1],
     ["LOP_AFR_OPF_T34", 1],
+	["LOP_AFR_OPF_T55", 1],
 
     ["RHS_Mi8mt_vdv", 1],
     ["RHS_Mi8MTV3_vdv", 1],
