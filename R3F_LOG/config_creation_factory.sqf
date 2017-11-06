@@ -331,10 +331,10 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "rhs_D30_msv",
     "rhs_D30_at_msv",
     "rhs_2b14_82mm_msv",
-    "rhs_zsu234_aa",
     "rhs_sprut_vdv",
 
     //Armoured
+    "rhs_zsu234_aa",
     "rhs_2s3_tv",
     "rhs_t72ba_tv",
     "rhs_t72bd_tv",
