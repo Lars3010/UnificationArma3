@@ -85,9 +85,6 @@ else
 					_objet setPos _pos_degagee;
 					_objet setVectorDirAndUp [[-cos getDir _usine, sin getDir _usine, 0] vectorCrossProduct surfaceNormal _pos_degagee, surfaceNormal _pos_degagee];
 					_objet setVelocity [0, 0, 0];
-					clearWeaponCargoGlobal _objet;
-                    clearMagazineCargoGlobal _objet;
-                    clearItemCargoGlobal _objet;
 					
 					if !(isNull _objet) then
 					{
@@ -107,6 +104,10 @@ else
 						
 						// Prise en compte de l'objet dans l'environnement du joueur (acc�l�rer le retour des addActions)
 						_objet spawn
+						clearWeaponCargoGlobal _objet;
+                        clearMagazineCargoGlobal _objet;
+                        clearItemCargoGlobal _objet;
+
 						{
 							sleep 4;
 							R3F_LOG_PUBVAR_reveler_au_joueur = _this;
