@@ -211,6 +211,8 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "rhsusf_m113_usarmy_unarmed",
     "rhsusf_m109_usarmy",
 
+    "CUP_B_AAV_USMC",
+
     //Cars
     "RHS_M119_WD",
     "RHS_M252_WD",
@@ -226,6 +228,8 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "RHS_M2A2_BUSKI_WD",
     "RHS_M2A3_wd",
     "RHS_M2A3_BUSKIII_wd",
+
+    "CUP_B_M6LineBacker_USA_W",
 
     //Mraps?
     "rhsusf_M1117_W",
@@ -462,6 +466,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhsusf_m113_usarmy_M240", 1],
     ["rhsusf_m113_usarmy_MK19", 1],
     ["rhsusf_m113_usarmy_unarmed", 1],
+    ["CUP_B_AAV_USMC", 1],
 
     ["rhsusf_m109_usarmy", 1],
     ["RHS_M119_WD", 1],
@@ -475,6 +480,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhsusf_m998_w_2dr_halftop", 1],
     ["rhsusf_m998_w_4dr", 1],
 
+    ["CUP_B_M6LineBacker_USA_W", 1],
     ["RHS_M2A2_wd", 1],
     ["RHS_M2A2_BUSKI_WD", 1],
     ["RHS_M2A3_wd", 1],
