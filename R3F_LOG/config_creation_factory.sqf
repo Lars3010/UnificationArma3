@@ -339,6 +339,7 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 
     //Armoured
     "rhs_zsu234_aa",
+    "CUP_O_2S6M_RU",
     "rhs_2s3_tv",
     "rhs_t72ba_tv",
     "rhs_t72bd_tv",
@@ -355,7 +356,8 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "RHS_Mi8MTV3_vdv",
     "RHS_Ka52_vvsc",
     "RHS_Mi24V_vdv",
-    "rhs_ka60_grey"
+    "rhs_ka60_grey",
+    "CUP_O_MI6T_RU"
 
 ];
 
@@ -576,6 +578,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhs_2b14_82mm_msv", 1],
 
     ["rhs_zsu234_aa", 1],
+    ["CUP_O_2S6M_RU", 1],
     ["rhs_sprut_vdv", 1],
     ["rhs_2s3_tv", 1],
     ["rhs_t72ba_tv", 1],
@@ -592,6 +595,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["RHS_Mi8MTV3_vdv", 1],
     ["RHS_Ka52_vvsc", 1],
     ["RHS_Mi24V_vdv", 1],
-    ["rhs_ka60_grey", 1]
+    ["rhs_ka60_grey", 1],
+    ["CUP_O_MI6T_RU", 1]
 
 ];
