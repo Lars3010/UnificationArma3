@@ -4,14 +4,20 @@ R3F_LOG_CFG_can_tow = R3F_LOG_CFG_can_tow +
 	"tractorold",
 	"mtvr",
 	"CUP_MTVR_Base",
-	"t810_turrets_base_acr"
+	"t810_turrets_base_acr",
+	"CUP_B_M6LineBacker_USA_W",
+	"CUP_B_AAV_USMC",
+	"CUP_O_2S6M_RU"
 ];
 
 R3F_LOG_CFG_can_be_towed = R3F_LOG_CFG_can_be_towed +
 [
 	"d30_base",
 	"m119",
-	"zu23_base"
+	"zu23_base",
+	"CUP_B_M6LineBacker_USA_W",
+	"CUP_B_AAV_USMC",
+	"CUP_O_2S6M_RU"
 ];
 
 R3F_LOG_CFG_can_lift = R3F_LOG_CFG_can_lift +
@@ -98,7 +104,10 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["m113_base", 10],
 	["m2a2_ep1", 8],
 	["aav", 8],
-	["CUP_MTVR_Base",80]
+	["CUP_MTVR_Base",80],
+	["CUP_B_M6LineBacker_USA_W",15],
+	["CUP_B_AAV_USMC", 15],
+	["CUP_O_2S6M_RU", 10]
 ];
 
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +

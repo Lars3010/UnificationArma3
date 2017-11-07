@@ -86,7 +86,7 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 [
 	// e.g. : ["MyTransporterClassName1", itsCapacity], ["MyTransporterClassName2", itsCapacity]
-    ["RHS_CH_47F",100],
+    ["RHS_CH_47F",130],
     ["RHS_UH60M",50],
     ["RHS_UH60M2",50],
 
