@@ -60,6 +60,7 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["bagfence_base_f", 2],
 	["flagcarriercore", 2],
 
+	//classes
 	["Land_HBarrier_3_F", 1],
     ["Land_HBarrier_5_F", 1],
     ["Land_HBarrier_Big_F", 1],
@@ -135,7 +136,7 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"bagfence_base_f",
 	"flagcarriercore",
 
-
+	//classes
 	"Land_HBarrier_3_F",
 	"Land_HBarrier_5_F",
 	"Land_HBarrier_Big_F",

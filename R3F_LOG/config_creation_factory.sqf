@@ -358,12 +358,11 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "RHS_Mi24V_vdv",
     "rhs_ka60_grey",
     "CUP_O_MI6T_RU"
-
 ];
 
 R3F_LOG_CF_independent_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 [
-
+	//add classes here
 ];
 
 /**

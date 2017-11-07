@@ -1,8 +1,8 @@
 /**
  * Cr�er un objet - appel� deuis l'interface de l'usine de cr�ation
- * 
+ *
  * Copyright (C) 2014 Team ~R3F~
- * 
+ *
  * This program is free software under the terms of the GNU General Public License version 3.
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
@@ -15,22 +15,22 @@ if (R3F_LOG_mutex_local_verrou) then
 else
 {
 	R3F_LOG_mutex_local_verrou = true;
-	
+
 	disableSerialization; // A cause des displayCtrl
-	
+
 	#include "dlg_constantes.h"
 	private ["_usine", "_classe", "_cout", "_objet", "_pos_degagee", "_action_confirmee", "_est_deplacable"];
-	
+
 	_usine = uiNamespace getVariable "R3F_LOG_dlg_LO_usine";
-	
+
 	if (lbCurSel R3F_LOG_IDC_dlg_LO_liste_objets == -1) exitWith {R3F_LOG_mutex_local_verrou = false;};
 	_classe = lbData [R3F_LOG_IDC_dlg_LO_liste_objets, lbCurSel R3F_LOG_IDC_dlg_LO_liste_objets];
-	
+
 	if (_classe != "") then
 	{
 		_cout = [_classe] call R3F_LOG_FNCT_determiner_cout_creation;
 		_est_deplacable = ([_classe] call R3F_LOG_FNCT_determiner_fonctionnalites_logistique) select R3F_LOG_IDX_can_be_moved_by_player;
-		
+
 		// L'usine a-t-elle assez de cr�dits ?
 		if (_usine getVariable "R3F_LOG_CF_credits" == -1 || _usine getVariable "R3F_LOG_CF_credits" >= _cout) then
 		{
@@ -38,13 +38,13 @@ else
 			if (_classe isKindOf "AllVehicles") then
 			{
 				private ["_rayon", "_bbox", "_bbox_dim"];
-				
+
 				systemChat STR_R3F_LOG_action_creer_en_cours;
 				sleep 0.5;
-				
+
 				_bbox = [_classe] call R3F_LOG_FNCT_3D_get_bounding_box_depuis_classname;
 				_bbox_dim = (vectorMagnitude (_bbox select 0)) max (vectorMagnitude (_bbox select 1));
-				
+
 				// Recherche d'une position d�gag�e (on augmente progressivement le rayon jusqu'� trouver une position)
 				for [{_rayon = 5 max (2*_bbox_dim); _pos_degagee = [];}, {count _pos_degagee == 0 && _rayon <= 30 + (8*_bbox_dim)}, {_rayon = _rayon + 10 + (2*_bbox_dim)}] do
 				{
@@ -60,7 +60,7 @@ else
 			{
 				_pos_degagee = [] call R3F_LOG_FNCT_3D_tirer_position_degagee_ciel;
 			};
-			
+
 			if (count _pos_degagee > 0) then
 			{
 				// Si l'objet n'est ni un v�hicule, ni d�pla�able manuellement, on demande confirmation de cr�ation
@@ -72,7 +72,7 @@ else
 				{
 					_action_confirmee = true;
 				};
-				
+
 				if (_action_confirmee) then
 				{
 					// D�duction des cr�dits (si limit�)
@@ -80,48 +80,47 @@ else
 					{
 						_usine setVariable ["R3F_LOG_CF_credits", 0 max ((_usine getVariable "R3F_LOG_CF_credits") - _cout), true];
 					};
-					
+
 					_objet = _classe createVehicle _pos_degagee;
 					_objet setPos _pos_degagee;
 					_objet setVectorDirAndUp [[-cos getDir _usine, sin getDir _usine, 0] vectorCrossProduct surfaceNormal _pos_degagee, surfaceNormal _pos_degagee];
 					_objet setVelocity [0, 0, 0];
-					
+
 					if !(isNull _objet) then
 					{
 						// D�sactivation du bouton fermer car la cr�ation est engag�e
 						(findDisplay R3F_LOG_IDD_dlg_liste_objets displayCtrl R3F_LOG_IDC_dlg_LO_btn_fermer) ctrlEnable false;
-						
+
 						// M�moriser que cet objet a �t� cr�� depuis une usine
 						_objet setVariable ["R3F_LOG_CF_depuis_usine", true, true];
-						
+
 						[_objet, player] call R3F_LOG_FNCT_definir_proprietaire_verrou;
-						
+
 						sleep 0.5;
-						
+
 						// Informer tout le monde qu'il y a un nouvel objet
 						R3F_LOG_PUBVAR_nouvel_objet_a_initialiser = true;
 						publicVariable "R3F_LOG_PUBVAR_nouvel_objet_a_initialiser";
-						
+
 						// Prise en compte de l'objet dans l'environnement du joueur (acc�l�rer le retour des addActions)
 						_objet spawn
 						clearWeaponCargoGlobal _objet;
                         clearMagazineCargoGlobal _objet;
                         clearItemCargoGlobal _objet;
-
 						{
 							sleep 4;
 							R3F_LOG_PUBVAR_reveler_au_joueur = _this;
 							publicVariable "R3F_LOG_PUBVAR_reveler_au_joueur";
 							["R3F_LOG_PUBVAR_reveler_au_joueur", R3F_LOG_PUBVAR_reveler_au_joueur] spawn R3F_LOG_FNCT_PUBVAR_reveler_au_joueur;
 						};
-						
+
 						// Si l'objet cr�� est un drone, on y place des IA en �quipage
 						if (getNumber (configFile >> "CfgVehicles" >> (typeOf _objet) >> "isUav") == 1) then
 						{
 							createVehicleCrew _objet;
 							sleep 0.5;
 						};
-						
+
 						if (!(_objet isKindOf "AllVehicles") || _est_deplacable) then
 						{
 							R3F_LOG_mutex_local_verrou = false;
@@ -130,7 +129,7 @@ else
 						else
 						{
 							sleep 0.4; // Car la prise en compte n'est pas instantann�e
-							
+
 							// Si l'objet a �t� cr�� assez loin, on indique sa position relative
 							if (_objet distance _usine > 40) then
 							{
@@ -145,7 +144,7 @@ else
 							};
 							R3F_LOG_mutex_local_verrou = false;
 						};
-						
+
 						closeDialog 0;
 					}
 					else
