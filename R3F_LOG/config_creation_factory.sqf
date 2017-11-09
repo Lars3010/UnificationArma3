@@ -145,7 +145,8 @@ R3F_LOG_CFG_CF_whitelist_full_categories = R3F_LOG_CFG_CF_whitelist_medium_categ
    	"ACE_Logistics_Items",
 
 	//Project opfor
-	"LOP_Armored"
+	"LOP_Armored",
+	"LOP_Wheeled"
 ];
 
 
@@ -279,7 +280,14 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 	//Air (helicopters)
 	"CUP_B_UH1D_slick_GER_KSK_Des",
 	"CUP_B_UH1D_GER_KSK_Des",
-	"RHS_MELB_MH6M"
+	"RHS_MELB_MH6M",
+
+	//turrets
+	"RHS_M2StaticMG_WD",
+	"RHS_M2StaticMG_MiniTripod_WD",
+	"RHS_Stinger_AA_pod_WD",
+	"RHS_TOW_TriPod_WD",
+	"RHS_MK19_TriPod_WD"
 
 ];
 
@@ -322,16 +330,21 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "LOP_TKA_UAZ_AGS",
 
     //Trucks
-    "LOP_SLA_Ural",
-    "LOP_SLA_Ural_open",
     "rhs_gaz66_msv",
     "rhs_gaz66o_msv",
     "rhs_kamaz5350_msv",
     "rhs_kamaz5350_open_msv",
     "RHS_Ural_Zu23_VDV_01",
+	"RHS_Ural_Open_Flat_MSV_01",
+	"RHS_Ural_Repair_MSV_01",
+	"RHS_Ural_Fuel_MSV_01",
+	"rhs_gaz66_ap2_msv",
+	"rhs_kamaz5350_flatbed_msv",
+	"RHS_Ural_MSV_01",
+	"RHS_Ural_Open_MSV_01",
 
     //Artillery
-    "LOP_SLA_BM21",
+    "RHS_BM21_MSV_01",
     "rhs_D30_msv",
     "rhs_D30_at_msv",
     "rhs_2b14_82mm_msv",
@@ -357,7 +370,18 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     "RHS_Ka52_vvsc",
     "RHS_Mi24V_vdv",
     "rhs_ka60_grey",
-    "CUP_O_MI6T_RU"
+    "CUP_O_MI6T_RU",
+
+	//turrets
+	"rhs_Metis_9k115_2_msv",
+	"rhs_Kornet_9M133_2_msv",
+	"rhs_Igla_AA_pod_msv",
+	"RHS_AGS30_TriPod_MSV",
+	"rhs_KORD_MSV",
+	"rhs_KORD_high_MSV",
+	"RHS_NSV_TriPod_MSV",
+	"rhs_SPG9M_MSV",
+	"RHS_ZU23_MSV"
 ];
 
 R3F_LOG_CF_independent_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
@@ -529,6 +553,12 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["CUP_B_UH1D_slick_GER_KSK_Des", 1],
 	["CUP_B_UH1D_GER_KSK_Des", 1],
 
+	["RHS_M2StaticMG_WD", 1],
+	["RHS_M2StaticMG_MiniTripod_WD", 1],
+	["RHS_Stinger_AA_pod_WD", 1],
+	["RHS_TOW_TriPod_WD", 1],
+	["RHS_MK19_TriPod_WD", 1],
+
 	//Opfor Prices
 	["rhs_btr60_vdv", 1],
     ["rhs_btr70_msv", 1],
@@ -563,15 +593,20 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhs_uaz_open_vdv", 1],
     ["LOP_SLA_UAZ_DshKM", 1],
     ["LOP_TKA_UAZ_AGS", 1],
-    ["LOP_SLA_Ural", 1],
-    ["LOP_SLA_Ural_open", 1],
     ["rhs_gaz66_msv", 1],
     ["rhs_gaz66o_msv", 1],
     ["rhs_kamaz5350_msv", 1],
     ["rhs_kamaz5350_open_msv", 1],
     ["RHS_Ural_Zu23_VDV_01", 1],
+	["RHS_Ural_Open_Flat_MSV_01", 1],
+	["RHS_Ural_Repair_MSV_01", 1],
+	["RHS_Ural_Fuel_MSV_01", 1],
+	["rhs_gaz66_ap2_msv", 1],
+	["rhs_kamaz5350_flatbed_msv", 1],
+	["RHS_Ural_MSV_01", 1],
+	["RHS_Ural_Open_MSV_01", 1],
 
-    ["LOP_SLA_BM21", 1],
+    ["RHS_BM21_MSV_01", 1],
     ["rhs_D30_msv", 1],
     ["rhs_D30_at_msv", 1],
     ["rhs_2b14_82mm_msv", 1],
@@ -595,6 +630,16 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["RHS_Ka52_vvsc", 1],
     ["RHS_Mi24V_vdv", 1],
     ["rhs_ka60_grey", 1],
-    ["CUP_O_MI6T_RU", 1]
+    ["CUP_O_MI6T_RU", 1],
+
+	["rhs_Metis_9k115_2_msv", 1],
+	["rhs_Kornet_9M133_2_msv", 1],
+	["rhs_Igla_AA_pod_msv", 1],
+	["RHS_AGS30_TriPod_MSV", 1],
+	["rhs_KORD_MSV", 1],
+	["rhs_KORD_high_MSV", 1],
+	["RHS_NSV_TriPod_MSV", 1],
+	["rhs_SPG9M_MSV", 1],
+	["RHS_ZU23_MSV", 1]
 
 ];

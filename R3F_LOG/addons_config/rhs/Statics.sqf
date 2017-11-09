@@ -1,6 +1,5 @@
 /**
  * English and French comments
- * Commentaires anglais et français
  *
  * This file is a template to add objetcs from an addon in the configuration variables of the logistics system.
  * Make a copy of this file and fill it. Then add a #include to this file in the file R3F_LOG\config.sqf.
@@ -8,14 +7,6 @@
  * IMPORTANT NOTE : when a logistics feature is given to an object/vehicle class name, all the classes which inherit
  *                  of the parent/generic class (according to the CfgVehicles) will also have this feature.
  *                  CfgVehicles tree view example : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
- *
- *
- * Ce fichier est un exemple vierge permettant d'ajouter des objets d'un addon dans la configuration du système de logistique.
- * Faites une copie de ce fichier et remplissez-le. Puis ajouter un #include vers celui-ci dans le fichier R3F_LOG\config.sqf.
- *
- * NOTE IMPORTANTE : lorsqu'une fonctionnalité logistique est accordée à un nom de classe d'objet/véhicule, les classes
- *                   héritant de cette classe mère/générique (selon le CfgVehicles) se verront également dotées de cette fonctionnalité.
- *                   Exemple d'arborescence du CfgVehicles : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
  */
 
 /**
@@ -75,18 +66,6 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
  *   If "Car_F" is declared before "Truck_F" with a capacity of 40, and "Truck_F" is declared after with a capacity of 140,
  *   Then all the child classes of "Truck_F" will have a capacity of 140.
  *   And all the derived classes of "Car_F", not in "Truck_F", will have a capacity of 40.
- *
- *
- * Cette section utilise une quantification numérique de la capacité et du coût des objets.
- * Par exemple, dans un véhicule d'une capacité de 100, nous pouvons charger 5 objets coûtant 20 unités de capacité.
- * La capacité ne représente ni un poids, ni un volume, mais un choix fait pour la jouabilité.
- *
- * Note : la priorité d'une déclaration de coût/capacité sur une autre correspond à l'ordre inverse dans les tableaux.
- *   Cela implique que les classes les plus génériques doivent être listées avant les classes moins gnériques.
- *   Par exemple : la classe "Truck_F" est une classe dérviée de "Car_F" (voir http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html).
- *   Si "Car_F" est déclaré avant "Truck_F" avec une capacité de 40, et que "Truck_F" est déclaré après avec une capacité de 140,
- *   Alors toutes les classes dérivées de "Truck_F" auront une capacité de 140.
- *   Et toutes les classes dans "Car_F", non présentes dans "Truck_F", auront une capacité de 40.
  */
 
 /**
@@ -104,20 +83,30 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 /**
  * List of class names of objects which can be loaded in transport vehicle/cargo.
  * The second element of the nested arrays is the cost capacity (in relation with the capacity of the vehicles).
- *
- * Liste des noms de classes des objets transportables.
- * Le deuxième élément des sous-tableaux est le coût de capacité (en relation avec la capacité des véhicules).
  */
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 [
-	// e.g. : ["MyTransportableObjectClassName1", itsCost], ["MyTransportableObjectClassName2", itsCost]
+    ["RHS_M2StaticMG_WD", 1],
+    ["RHS_M2StaticMG_MiniTripod_WD", 1],
+    ["RHS_Stinger_AA_pod_WD", 1],
+    ["RHS_TOW_TriPod_WD", 1],
+    ["RHS_MK19_TriPod_WD", 1],
+
+    ["rhs_Metis_9k115_2_msv", 1],
+	["rhs_Kornet_9M133_2_msv", 1],
+	["rhs_Igla_AA_pod_msv", 1],
+	["RHS_AGS30_TriPod_MSV", 1],
+	["rhs_KORD_MSV", 1],
+	["rhs_KORD_high_MSV", 1],
+	["RHS_NSV_TriPod_MSV", 1],
+	["rhs_SPG9M_MSV", 1],
+	["RHS_ZU23_MSV", 1]
 ];
 
 /****** MOVABLE-BY-PLAYER OBJECTS / OBJETS DEPLACABLES PAR LE JOUEUR ******/
 
 /**
  * List of class names of objects which can be carried and moved by a player.
- * Liste des noms de classes des objets qui peuvent être portés et déplacés par le joueur.
  */
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 [
