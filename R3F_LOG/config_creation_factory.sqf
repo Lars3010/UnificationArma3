@@ -397,6 +397,8 @@ R3F_LOG_CF_east_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 	"RHS_AGS30_TriPod_MSV",
 	"rhs_KORD_MSV",
 	"rhs_KORD_high_MSV",
+	"rhsgref_ins_DSHKM",
+    "rhsgref_ins_DSHKM_Mini_TriPod",
 	"RHS_NSV_TriPod_MSV",
 	"rhs_SPG9M_MSV",
 	"RHS_ZU23_MSV"
@@ -657,6 +659,8 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 	["RHS_AGS30_TriPod_MSV", 1],
 	["rhs_KORD_MSV", 1],
 	["rhs_KORD_high_MSV", 1],
+	["rhsgref_ins_DSHKM", 1],
+    ["rhsgref_ins_DSHKM_Mini_TriPod", 1],
 	["RHS_NSV_TriPod_MSV", 1],
 	["rhs_SPG9M_MSV", 1],
 	["RHS_ZU23_MSV", 1]
