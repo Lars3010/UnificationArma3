@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={745.92706,10.352679,971.15051};
-		dir[]={-0.96515173,-0.25866851,0.042968273};
-		up[]={-0.25822935,0.96658689,0.011493834};
-		aside[]={0.044396285,-2.2062304e-006,0.99837333};
+		pos[]={728.33685,12.882037,966.88629};
+		dir[]={-0.27152497,-0.66317266,0.6976738};
+		up[]={-0.24054055,0.74916273,0.61805505};
+		aside[]={0.93127549,-2.4656765e-005,0.36248806};
 	};
 };
 binarizationWanted=0;
@@ -152,7 +152,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{nul = [west_factory, -1, west, ""WEST""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
+				init="call{nul = [west_factory, 500000, west, ""WEST""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
 				name="west_factory";
 			};
 			id=4;
@@ -192,7 +192,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{nul = [east_factory, -1, east,""EAST""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
+				init="call{nul = [east_factory, 500000, east,""EAST""] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
 				name="east_factory";
 			};
 			id=19;
