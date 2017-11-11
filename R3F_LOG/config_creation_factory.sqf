@@ -269,6 +269,8 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
 
 	"CUP_B_M1130_CV_M2_Woodland",
 	"CUP_B_M1130_CV_M2_Woodland_Slat",
+	"CUP_B_M1126_ICV_MK19_Woodland_Slat",
+    "CUP_B_M1126_ICV_MK19_Woodland",
 	"CUP_B_M1128_MGS_Woodland",
 	"CUP_B_M1128_MGS_Woodland_Slat",
 
@@ -547,6 +549,8 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 
 	["CUP_B_M1130_CV_M2_Woodland", 30000],
 	["CUP_B_M1130_CV_M2_Woodland_Slat", 35000],
+	["CUP_B_M1126_ICV_MK19_Woodland_Slat", 45000],
+    ["CUP_B_M1126_ICV_MK19_Woodland", 40000],
 	["CUP_B_M1128_MGS_Woodland", 200000],
 	["CUP_B_M1128_MGS_Woodland_Slat", 200000],
 
