@@ -18,7 +18,8 @@ R3F_LOG_CFG_can_lift = R3F_LOG_CFG_can_lift +
 	"mi24_base",
 	"uh1_base",
 	"uh60_base",
-	"CUP_O_MI6T_RU"
+	"CUP_O_MI6T_RU",
+	"CUP_UH1H_Base"
 ];
 
 R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
@@ -44,7 +45,8 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["c130j", 250],
 	["dc3", 90],
 	["mv22", 60],
-	["CUP_O_MI6T_RU", 160]
+	["CUP_O_MI6T_RU", 160],
+	["CUP_UH1H_Base",50]
 ];
 
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +

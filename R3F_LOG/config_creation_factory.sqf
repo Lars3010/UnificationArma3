@@ -258,6 +258,7 @@ R3F_LOG_CF_west_objects = R3F_LOG_CFG_CF_whitelist_default_categories +
     //Trucks
     "rhsusf_M1078A1P2_WD_fmtv_usarmy",
     "rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy",
+	"rhsusf_M1084A1P2_B_WD_fmtv_usarmy",
     "rhsusf_M977A4_usarmy_wd",
 	"rhsusf_M978A4_usarmy_wd",
 	"rhsusf_M977A4_REPAIR_usarmy_wd",
@@ -534,6 +535,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 
     ["rhsusf_M1078A1P2_WD_fmtv_usarmy", 1],
     ["rhsusf_M1078A1P2_WD_flatbed_fmtv_usarmy", 1],
+	["rhsusf_M1084A1P2_B_WD_fmtv_usarmy", 1],
     ["rhsusf_M977A4_usarmy_wd", 1],
 	["rhsusf_M978A4_usarmy_wd", 1],
 	["rhsusf_M977A4_REPAIR_usarmy_wd", 1],

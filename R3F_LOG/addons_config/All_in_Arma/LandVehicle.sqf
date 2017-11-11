@@ -109,11 +109,11 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 	["m2a2_ep1", 8],
 	["aav", 8],
 	["CUP_MTVR_Base",80],
-	["CUP_B_M6LineBacker_USA_W",15],
+	["CUP_B_M6LineBacker_USA_W",10],
 	["CUP_B_AAV_USMC", 15],
 	["CUP_O_2S6M_RU", 10],
 	["CUP_StrykerBase", 10],
-	["CUP_UH1H_Base",50]
+	["CUP_M60A3_Base", 10]
 ];
 
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
