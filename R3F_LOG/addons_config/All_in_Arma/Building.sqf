@@ -132,7 +132,7 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
     ["Land_Bunker_01_blocks_1_F", 10],
     ["Land_Bunker_01_HQ_F", 120],
     ["Land_Bunker_01_small_F", 50],
-    ["Land_Bunker_01_tall_F", 120],
+    ["Land_Bunker_01_tall_F", 75],
 
     ["Land_SandbagBarricade_01_half_F", 2],
     ["Land_SandbagBarricade_01_F", 2],
