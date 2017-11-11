@@ -98,6 +98,8 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["RHS_AGS30_TriPod_MSV", 1],
 	["rhs_KORD_MSV", 1],
 	["rhs_KORD_high_MSV", 1],
+	["rhsgref_ins_DSHKM", 1],
+    ["rhsgref_ins_DSHKM_Mini_TriPod", 1],
 	["RHS_NSV_TriPod_MSV", 1],
 	["rhs_SPG9M_MSV", 1],
 	["RHS_ZU23_MSV", 1]
@@ -111,6 +113,22 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 [
 	// e.g. : "MyMovableObjectClassName1", "MyMovableObjectClassName2"
+    "RHS_M2StaticMG_WD",
+    "RHS_M2StaticMG_MiniTripod_WD",
+    "RHS_Stinger_AA_pod_WD",
+    "RHS_TOW_TriPod_WD",
+    "RHS_MK19_TriPod_WD",
+    "rhs_Metis_9k115_2_msv",
+    "rhs_Kornet_9M133_2_msv",
+    "rhs_Igla_AA_pod_msv",
+    "RHS_AGS30_TriPod_MSV",
+    "rhs_KORD_MSV",
+    "rhs_KORD_high_MSV",
+    "rhsgref_ins_DSHKM",
+    "rhsgref_ins_DSHKM_Mini_TriPod",
+    "RHS_NSV_TriPod_MSV",
+    "rhs_SPG9M_MSV",
+    "RHS_ZU23_MSV",
     "RHS_M119_base",
 	"rhs_D30_base"
 ];
