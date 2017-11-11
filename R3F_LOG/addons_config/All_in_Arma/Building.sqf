@@ -123,7 +123,54 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["misc_cargo_cont_small", 75],
 	["misc_cargo_cont_small2", 60],
 	["shed", 2],
-	["target", 2]
+	["target", 2],
+
+	["Land_CzechHedgehog_01_F", 1],
+
+    ["Land_Barricade_01_10m_F", 1],
+    ["Land_Barricade_01_4m_F", 1],
+    ["Land_Bunker_01_blocks_3_F", 1],
+    ["Land_Bunker_01_big_F", 1],
+    ["Land_Bunker_01_blocks_1_F", 1],
+    ["Land_Bunker_01_HQ_F", 1],
+    ["Land_Bunker_01_small_F", 1],
+    ["Land_Bunker_01_tall_F", 1],
+
+    ["Land_SandbagBarricade_01_half_F", 1],
+    ["Land_SandbagBarricade_01_F", 1],
+    ["Land_SandbagBarricade_01_hole_F", 1],
+
+    ["Land_BagBunker_Large_F", 1],
+    ["Land_BagBunker_Small_F", 1],
+    ["Land_BagBunker_Tower_F", 1],
+
+    ["CamoNet_INDP_F", 1],
+    ["CamoNet_INDP_open_F", 1],
+
+    ["Land_MedicalTent_01_MTP_closed_F", 1],
+
+    ["Land_Cargo_House_V1_F", 1],
+    ["Land_Cargo_HQ_V1_F", 1],
+    ["Land_Cargo_Patrol_V1_F", 1],
+    ["Land_Cargo_Tower_V1_F", 1],
+
+    ["Land_CncShelter_F", 1],
+
+    ["Hhedgehog_concreteBig", 1],
+    ["Hhedgehog_concrete", 1],
+
+    ["Land_Vez", 1],
+    ["Land_Hlaska", 1],
+
+    ["Land_Mil_WallBig_4m_F", 1],
+    ["Land_Mil_WallBig_Corner_F", 1],
+
+    ["Land_CncBarrier_F", 1],
+    ["Land_CncBarrierMedium_F", 1],
+    ["Land_CncBarrier_stripes_F", 1],
+    ["Land_CncBarrierMedium4_F", 1],
+
+    ["Land_BarGate_F", 1]
 ];
 
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
@@ -167,5 +214,40 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"ammocrate_nointeractive_",
 	"misc_cargo_cont_net1",
 	"shed",
-	"target"
+	"target",
+
+	"Land_CzechHedgehog_01_F",
+    "Land_Barricade_01_10m_F",
+    "Land_Barricade_01_4m_F",
+    "Land_Bunker_01_blocks_3_F",
+    "Land_Bunker_01_big_F",
+    "Land_Bunker_01_blocks_1_F",
+    "Land_Bunker_01_HQ_F",
+    "Land_Bunker_01_small_F",
+    "Land_Bunker_01_tall_F",
+    "Land_SandbagBarricade_01_half_F",
+    "Land_SandbagBarricade_01_F",
+    "Land_SandbagBarricade_01_hole_F",
+    "Land_BagBunker_Large_F",
+    "Land_BagBunker_Small_F",
+    "Land_BagBunker_Tower_F",
+    "CamoNet_INDP_F",
+    "CamoNet_INDP_open_F",
+    "Land_MedicalTent_01_MTP_closed_F",
+    "Land_Cargo_House_V1_F",
+    "Land_Cargo_HQ_V1_F",
+    "Land_Cargo_Patrol_V1_F",
+    "Land_Cargo_Tower_V1_F",
+    "Land_CncShelter_F",
+    "Hhedgehog_concreteBig",
+    "Hhedgehog_concrete",
+    "Land_Vez",
+    "Land_Hlaska",
+    "Land_Mil_WallBig_4m_F",
+    "Land_Mil_WallBig_Corner_F",
+    "Land_CncBarrier_F",
+    "Land_CncBarrierMedium_F",
+    "Land_CncBarrier_stripes_F",
+    "Land_CncBarrierMedium4_F",
+    "Land_BarGate_F"
 ];
