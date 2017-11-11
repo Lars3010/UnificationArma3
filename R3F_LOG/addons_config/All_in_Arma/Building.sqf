@@ -214,6 +214,20 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"shed",
 	"target",
 
+	"Land_HBarrier_3_F",
+	"Land_HBarrier_5_F",
+	"Land_HBarrier_Big_F",
+	"Land_HBarrier_1_F",
+	"Land_HBarrierWall_corridor_F",
+	"Land_HBarrierWall_corner_F",
+	"Land_HBarrierWall6_F",
+	"Land_HBarrierWall4_F",
+	"Land_HBarrierTower_F",
+	"Land_BagFence_Corner_F",
+	"Land_BagFence_End_F",
+	"Land_BagFence_Long_F",
+	"Land_BagFence_Round_F",
+	"Land_BagFence_Short_F",
 	"Land_CzechHedgehog_01_F",
     "Land_Barricade_01_10m_F",
     "Land_Barricade_01_4m_F",
@@ -247,5 +261,6 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
     "Land_CncBarrierMedium_F",
     "Land_CncBarrier_stripes_F",
     "Land_CncBarrierMedium4_F",
-    "Land_BarGate_F"
+    "Land_BarGate_F",
+	"Land_Razorwire_F",
 ];
