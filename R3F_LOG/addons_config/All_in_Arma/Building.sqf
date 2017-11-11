@@ -125,52 +125,50 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 	["shed", 2],
 	["target", 2],
 
-	["Land_CzechHedgehog_01_F", 1],
+	["Land_CzechHedgehog_01_F", 2],
 
-    ["Land_Barricade_01_10m_F", 1],
-    ["Land_Barricade_01_4m_F", 1],
-    ["Land_Bunker_01_blocks_3_F", 1],
-    ["Land_Bunker_01_big_F", 1],
-    ["Land_Bunker_01_blocks_1_F", 1],
-    ["Land_Bunker_01_HQ_F", 1],
-    ["Land_Bunker_01_small_F", 1],
-    ["Land_Bunker_01_tall_F", 1],
+    ["Land_Bunker_01_blocks_3_F", 30],
+    ["Land_Bunker_01_big_F", 120],
+    ["Land_Bunker_01_blocks_1_F", 10],
+    ["Land_Bunker_01_HQ_F", 120],
+    ["Land_Bunker_01_small_F", 50],
+    ["Land_Bunker_01_tall_F", 120],
 
-    ["Land_SandbagBarricade_01_half_F", 1],
-    ["Land_SandbagBarricade_01_F", 1],
-    ["Land_SandbagBarricade_01_hole_F", 1],
+    ["Land_SandbagBarricade_01_half_F", 2],
+    ["Land_SandbagBarricade_01_F", 2],
+    ["Land_SandbagBarricade_01_hole_F", 2],
 
-    ["Land_BagBunker_Large_F", 1],
-    ["Land_BagBunker_Small_F", 1],
-    ["Land_BagBunker_Tower_F", 1],
+    ["Land_BagBunker_Large_F", 20],
+    ["Land_BagBunker_Small_F", 10],
+    ["Land_BagBunker_Tower_F", 10],
 
-    ["CamoNet_INDP_F", 1],
-    ["CamoNet_INDP_open_F", 1],
+    ["CamoNet_INDP_F", 4],
+    ["CamoNet_INDP_open_F", 4],
 
-    ["Land_MedicalTent_01_MTP_closed_F", 1],
+    ["Land_MedicalTent_01_MTP_closed_F", 4],
 
-    ["Land_Cargo_House_V1_F", 1],
-    ["Land_Cargo_HQ_V1_F", 1],
-    ["Land_Cargo_Patrol_V1_F", 1],
-    ["Land_Cargo_Tower_V1_F", 1],
+    ["Land_Cargo_House_V1_F", 50],
+    ["Land_Cargo_HQ_V1_F", 75],
+    ["Land_Cargo_Patrol_V1_F", 50],
+    ["Land_Cargo_Tower_V1_F", 120],
 
-    ["Land_CncShelter_F", 1],
+    ["Land_CncShelter_F", 4],
 
-    ["Hhedgehog_concreteBig", 1],
-    ["Hhedgehog_concrete", 1],
+    ["Hhedgehog_concreteBig", 4],
+    ["Hhedgehog_concrete", 4],
 
-    ["Land_Vez", 1],
-    ["Land_Hlaska", 1],
+    ["Land_Vez", 10],
+    ["Land_Hlaska", 10],
 
-    ["Land_Mil_WallBig_4m_F", 1],
-    ["Land_Mil_WallBig_Corner_F", 1],
+    ["Land_Mil_WallBig_4m_F", 7],
+    ["Land_Mil_WallBig_Corner_F", 7],
 
-    ["Land_CncBarrier_F", 1],
-    ["Land_CncBarrierMedium_F", 1],
-    ["Land_CncBarrier_stripes_F", 1],
-    ["Land_CncBarrierMedium4_F", 1],
+    ["Land_CncBarrier_F", 4],
+    ["Land_CncBarrierMedium_F", 4],
+    ["Land_CncBarrier_stripes_F", 4],
+    ["Land_CncBarrierMedium4_F", 4],
 
-    ["Land_BarGate_F", 1]
+    ["Land_BarGate_F", 2]
 ];
 
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
