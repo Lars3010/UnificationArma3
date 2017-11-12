@@ -1,6 +1,12 @@
-- Simulation of pitch/yaw rotation between towing vehicle and towed object
-- Parachute drop of objects loaded in aircraft's cargo
-- Add visual ropes on airlifted and towed objects (waiting progress of ropeCreate)
-- Add a way to define custom categories in the creation factory
-- Deny to fire with the turret of airlifted vehicles (waiting for enablePersonTurret)
-- Implement a network-mutex on setVariable
+ADD
+- Disable regular towing/sling loading and replace with advanced towing mods
+- Add triggers in territory to set to hostile during black ops
+- Create dialog for diplomacy
+	- declare war
+	- call for meeting
+- cash making buildings
+
+FIX
+- disable sendback
+- set landmines unknown
+- Configure arsenals properly
