@@ -5,6 +5,7 @@ ADD
 	- declare war
 	- call for meeting
 - cash making buildings
+- add airdrops
 
 FIX
 - disable sendback
