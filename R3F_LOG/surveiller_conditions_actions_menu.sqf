@@ -240,8 +240,8 @@ while {true} do
 		R3F_LOG_action_contenu_vehicule_valide = false;
 		R3F_LOG_action_ouvrir_usine_valide = false;
 		R3F_LOG_action_selectionner_objet_revendre_usine_valide = false;
-		R3F_LOG_action_revendre_usine_direct_valide = True; //false;
-		R3F_LOG_action_revendre_usine_deplace_valide = True; //false;
+		R3F_LOG_action_revendre_usine_direct_valide = false;
+		R3F_LOG_action_revendre_usine_deplace_valide = false;
 		R3F_LOG_action_revendre_usine_selection_valide = false;
 		R3F_LOG_action_deverrouiller_valide = false;
 	};

@@ -1,5 +1,5 @@
 /**
- * Initialise un objet déplaçable/héliportable/remorquable/transportable
+ * Initialise un objet dï¿½plaï¿½able/hï¿½liportable/remorquable/transportable
  * 
  * @param 0 l'objet
  * 
@@ -17,22 +17,22 @@ _objet = _this select 0;
 _config = configFile >> "CfgVehicles" >> (typeOf _objet);
 _nom = getText (_config >> "displayName");
 
-// Définition locale de la variable si elle n'est pas définie sur le réseau
+// Dï¿½finition locale de la variable si elle n'est pas dï¿½finie sur le rï¿½seau
 if (isNil {_objet getVariable "R3F_LOG_est_transporte_par"}) then
 {
 	_objet setVariable ["R3F_LOG_est_transporte_par", objNull, false];
 };
 
-// Définition locale de la variable si elle n'est pas définie sur le réseau
+// Dï¿½finition locale de la variable si elle n'est pas dï¿½finie sur le rï¿½seau
 if (isNil {_objet getVariable "R3F_LOG_est_deplace_par"}) then
 {
 	_objet setVariable ["R3F_LOG_est_deplace_par", objNull, false];
 };
 
-// Définition locale de la variable si elle n'est pas définie sur le réseau
+// Dï¿½finition locale de la variable si elle n'est pas dï¿½finie sur le rï¿½seau
 if (isNil {_objet getVariable "R3F_LOG_proprietaire_verrou"}) then
 {
-	// En mode de lock side : uniquement si l'objet appartient initialement à une side militaire
+	// En mode de lock side : uniquement si l'objet appartient initialement ï¿½ une side militaire
 	if (R3F_LOG_CFG_lock_objects_mode == "side") then
 	{
 		switch (getNumber (_config >> "side")) do
@@ -44,7 +44,7 @@ if (isNil {_objet getVariable "R3F_LOG_proprietaire_verrou"}) then
 	}
 	else
 	{
-		// En mode de lock faction : uniquement si l'objet appartient initialement à une side militaire
+		// En mode de lock faction : uniquement si l'objet appartient initialement ï¿½ une side militaire
 		if (R3F_LOG_CFG_lock_objects_mode == "faction") then
 		{
 			switch (getNumber (_config >> "side")) do
@@ -59,11 +59,11 @@ if (isNil {_objet getVariable "R3F_LOG_proprietaire_verrou"}) then
 // Si on peut embarquer dans l'objet
 if (isNumber (_config >> "preciseGetInOut")) then
 {
-	// Ne pas monter dans un véhicule qui est en cours de transport
+	// Ne pas monter dans un vï¿½hicule qui est en cours de transport
 	_objet addEventHandler ["GetIn", R3F_LOG_FNCT_EH_GetIn];
 };
 
-// Indices du tableau des fonctionnalités retourné par R3F_LOG_FNCT_determiner_fonctionnalites_logistique
+// Indices du tableau des fonctionnalitï¿½s retournï¿½ par R3F_LOG_FNCT_determiner_fonctionnalites_logistique
 #define __can_be_depl_heli_remorq_transp 0
 #define __can_be_moved_by_player 1
 #define __can_lift 2
@@ -95,12 +95,12 @@ if (_fonctionnalites select __can_be_towed) then
 {
 	if (_fonctionnalites select __can_be_moved_by_player) then
 	{
-		_objet addAction [("<t color=""#00dd00"">" + STR_R3F_LOG_action_remorquer_deplace + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_remorquer_deplace}, nil, 6, true, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_joueur_deplace_objet == _target && R3F_LOG_action_remorquer_deplace_valide"];
+		// _objet addAction [("<t color=""#00dd00"">" + STR_R3F_LOG_action_remorquer_deplace + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_remorquer_deplace}, nil, 6, true, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_joueur_deplace_objet == _target && R3F_LOG_action_remorquer_deplace_valide"];
 	};
 	
-	_objet addAction [("<t color=""#00dd00"">" + format [STR_R3F_LOG_action_remorquer_direct, _nom] + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_remorquer_direct}, nil, 5, false, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_action_remorquer_direct_valide"];
+	// _objet addAction [("<t color=""#00dd00"">" + format [STR_R3F_LOG_action_remorquer_direct, _nom] + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_remorquer_direct}, nil, 5, false, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_action_remorquer_direct_valide"];
 	
-	_objet addAction [("<t color=""#00dd00"">" + STR_R3F_LOG_action_detacher + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_detacher}, nil, 6, true, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_action_detacher_valide"];
+	// _objet addAction [("<t color=""#00dd00"">" + STR_R3F_LOG_action_detacher + "</t>"), {_this call R3F_LOG_FNCT_remorqueur_detacher}, nil, 6, true, true, "", "!R3F_LOG_mutex_local_verrou && R3F_LOG_objet_addAction == _target && R3F_LOG_action_detacher_valide"];
 };
 
 if (_fonctionnalites select __can_be_transported_cargo) then
