@@ -45,7 +45,7 @@
 
 */
 
-R3F_LOG_CFG_CF_sell_back_bargain_rate = 0.75;
+R3F_LOG_CFG_CF_sell_back_bargain_rate = -1;
 
 /**
  * LIGHT WHITE LIST
