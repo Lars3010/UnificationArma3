@@ -589,7 +589,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
 
     ["CUP_B_M6LineBacker_USA_W", 75000],
     ["RHS_M2A2_wd", 70000],
-    ["RHS_M2A2_BUSKI_WD", 90000],
+    ["RHS_M2A2_BUSKI_WD", 100000],
     ["RHS_M2A3_wd", 80000],
     ["RHS_M2A3_BUSKIII_wd", 130000],
 
@@ -656,7 +656,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhs_bmp2_tv", 70000],
     ["rhs_bmp2d_tv", 80000],
     ["rhs_bmp3mera_msv", 100000],
-    ["rhs_bmp3_late_msv", 130000],
+    ["rhs_bmp3_late_msv", 90000],
     ["rhs_brm1k_tv", 50000],
 
     ["rhs_bmd1", 30000],
@@ -708,7 +708,7 @@ R3F_LOG_CFG_CF_creation_cost_factor =
     ["rhs_t90_tv", 790000],
     ["rhs_t90a_tv", 800000],
     ["LOP_AFR_OPF_T34", 100000],
-	["LOP_AFR_OPF_T55", 1700000],
+	["LOP_AFR_OPF_T55", 170000],
 
     ["RHS_Mi8mt_vdv", 150000],
     ["RHS_Mi8MTV3_vdv", 200000],
