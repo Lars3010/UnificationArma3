@@ -2,7 +2,7 @@ private ["_side", "_case"];
 _dropArray = ["East","West"];
 
 _number = _case;
-_location = _side
+_location = _side;
 _cargo = "B_supplyCrate_F";
 
 _box = _cargo createVehicle getMarkerpos _location;_box setPos [getMarkerPos _location select 0, getMarkerPos _location select 1, 5];
@@ -14,25 +14,31 @@ clearBackpackCargoGlobal _box;
 
 _costbase = 3000;
 // Calculates the amount of cash to subtract based on crate tier
-if (_side == "West") then {
-_cost = _costbase * (_case - 3);
-} else {
-_cost = _costbase * _case;
+if (_side == "West") then
+{
+	_cost = _costbase * (_case - 3);
+}
+else
+{
+	_cost = _costbase * _case;
 };
 
 // Chooses the side to subtract that cash from
-if (_side == "West") then {
-_credits = west_factory getVariable "R3F_LOG_CF_credits";
+if (_side == "West") then
+{
+	_credits = west_factory getVariable "R3F_LOG_CF_credits";
 
-_credits = _credits - _cost;
+	_credits = _credits - _cost;
 
-west_factory setVariable ["R3F_LOG_CF_credits", _credits, true];
-} else {
-_credits = east_factory getVariable "R3F_LOG_CF_credits";
+	west_factory setVariable ["R3F_LOG_CF_credits", _credits, true];
+}
+else
+{
+	_credits = east_factory getVariable "R3F_LOG_CF_credits";
 
-_credits = _credits - _cost;
+	_credits = _credits - _cost;
 
-east_factory setVariable ["R3F_LOG_CF_credits", _credits, true];};
+	east_factory setVariable ["R3F_LOG_CF_credits", _credits, true];
 };
 
 // fetches the contents of the crate
@@ -167,5 +173,5 @@ BLUFOR
 };
 
 
-waitUntil {(getPosATL _box) select 2 < 2};
-_signal = "SmokeShellRed" createVehicle position _box; _signal allowDamage false;
+/*waitUntil {(getPosATL _box) select 2 < 2};
+_signal = "SmokeShellRed" createVehicle position _box; _signal allowDamage false;*/
