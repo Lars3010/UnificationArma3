@@ -5,7 +5,7 @@ _number = _case;
 _location = _side
 _cargo = "B_supplyCrate_F";
 
-_box = _cargo createVehicle getMarkerpos _location;_box setPos [getMarkerPos _location select 0, getMarkerPos _location select 1, 250];[objnull, _box] call BIS_fnc_curatorobjectedited;
+_box = _cargo createVehicle getMarkerpos _location;_box setPos [getMarkerPos _location select 0, getMarkerPos _location select 1, 5];
 
 clearMagazineCargoGlobal _box;
 clearItemCargoGlobal _box;
@@ -169,65 +169,3 @@ BLUFOR
 
 waitUntil {(getPosATL _box) select 2 < 2};
 _signal = "SmokeShellRed" createVehicle position _box; _signal allowDamage false;
-
-/*
-Opfor Weapons:
-
-	Standard:
-	- PM Makarov
-	- M38 Mosin Nagant no rail
-
-	Tier1:
-	- Bolt actions (rails)
-	- Zastava M70 rifles
-	- Zastava M92 carbines
-	- M76 no optic
-
-	Tier2:
-	- MP443 pistol
-	- AK74M (zentico) caliber rifles low magnification optics
-	- AK74MU
-	- PSO 1M2
-	- Grips and bipods
-	- SVD-M
-	- PKM Machine Gun
-
-	Tier3:
-	- AK74MR (UUK)
-	- SVD NPZ
-	- T5000 sniper rifle with DH 5-20x56
-	- AK74/105 with upgraded stocks and rails
-	- Underslung Grenade Launchers
-	- AS VAL / VSS Vintorez with sp6 ammo
-*/
-
-/*
-Blufor Weapons
-
-	Standard:
-	- M1911A1
-	- Kar98K
-
-	Tier1:
-	- Bolt actions (rails)
-	- M16A4 Carryhandle
-	- M4 Carryhandle
-	- M14 EBR-RI
-
-	Tier2:
-	- M9 Beretta pistol
-	- M4A1
-	- MK4 ER/T 3.5 - 10x M3
-	- Grips and bipods
-	- M249 PIP solid stock
-	- M24 SWS black
-
-	Tier3:
-	- M4A1 Block II
-	- HK416
-	- M2010 ESR black
-	- M8541A1 optic
-	- Underslung Grenade Launchers
-	- Suppressors
-
-*/
