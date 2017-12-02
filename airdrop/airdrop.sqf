@@ -16,54 +16,24 @@ clearBackpackCargoGlobal _box;
 
 switch (_number) do
 {
-	// Tier 1 Opfor
+	// Uniform tier 3 Opfor
 	case 1:
 	{
-		//Weapons
-		_box addItemCargoGlobal ["rhs_weap_m38_rail", 1];
-		_box addItemCargoGlobal ["rhs_weap_m70ab2", 2];
-		_box addItemCargoGlobal ["rhs_weap_m92", 2];
-		_box addItemCargoGlobal ["rhs_weap_m76", 1];
-
-		//Ammo
-		_box addItemCargoGlobal ["rhsgref_10Rnd_792x57_m76", 4]; // m76 Ammo
-		_box addItemCargoGlobal ["rhsgref_5Rnd_762x54_m38", 4]; // Mosin Ammo
-		_box addItemCargoGlobal ["rhs_30Rnd_762x39mm_89", 6]; //7.62 x 39mm AKM Ammo
-		_box addItemCargoGlobal ["rhs_30Rnd_762x39mm_tracer", 2]; //7.62 x 39mm AKM Ammo Green Tracer
-
 		//Uniform
-		_box addItemCargoGlobal ["rhs_uniform_m88_patchless", 4]; //Beige Coverall
-		_box addItemCargoGlobal ["rhs_6b5_khaki", 4]; //Afghan War Era Vest
-		_box addItemCargoGlobal ["rhs_ssh68", 4]; //WW2 Soviet Helmet
+		_box addItemCargoGlobal ["rhs_uniform_emr_patchless", 7]; //EMR bdu's
+		_box addItemCargoGlobal ["rhs_6b13_EMR_6sh92", 7]; //Flak vest with carrier rig EMR
+		_box addItemCargoGlobal ["rrhs_6b27m_digi", 7]; //EMR Helmet
+		_box addbackpackCargoGlobal ["B_Carryall_oli", 7]; //Backpack
+		_box addItemCargoGlobal ["rhs_1PN138", 7]; //NVG
 	};
 
-	// Tier 1 Blufor
+	//Guns Tier 3 Opfor
 	case 2:
 	{
 		//Weapons
-		_box addItemCargoGlobal ["rhs_weap_m16a4_carryhandle", 3];
-		_box addItemCargoGlobal ["rhs_weap_m4_carryhandle", 2];
-		_box addItemCargoGlobal ["rhs_weap_m14ebrri", 1];
-
-		//Ammo
-		_box addItemCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 2];
-		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 6]; //5.56 x 45 NATO
-		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 2]; //5.56 x 45 NATO Red Tracer
-
-		//Uniform
-		_box addItemCargoGlobal ["rhs_uniform_g3_m81", 4]; //M81 Woodland uniform
-		_box addItemCargoGlobal ["rhsgref_otv_khaki", 4]; //Khaki OTV
-		_box addItemCargoGlobal ["rhsgref_helmet_pasgt_erdl", 4]; //PASGT ERDL
-	};
-
-	// Tier 2 Opfor
-	case 3:
-	{
-		//Weapons
 		_box addItemCargoGlobal ["rhs_weap_ak74m", 2]; //ak74M
-		_box addItemCargoGlobal ["rhs_weap_ak74m_desert", 2]; //ak74M
-		_box addItemCargoGlobal ["rhs_weap_ak74m_zenitco01_grip1", 1]; //AK74M Zentico
-		_box addItemCargoGlobal ["rhs_weap_aks74un", 1]; //AK74UN
+		_box addItemCargoGlobal ["rhs_weap_ak74n", 2]; //ak74n
+		_box addItemCargoGlobal ["rhs_weap_ak74m_fullplum", 1]; //AK74M Zentico
 		_box addItemCargoGlobal ["rhs_weap_pkm", 1]; //PKM
 		_box addItemCargoGlobal ["rhs_weap_svdp", 1]; //SVD-M
 		_box addItemCargoGlobal ["rhs_weap_pya", 5]; //MP-443 Grach
@@ -82,140 +52,95 @@ switch (_number) do
 		_box addItemCargoGlobal ["rhs_acc_1p78", 1]; //1P78 Optic
 		_box addItemCargoGlobal ["rhs_acc_1p29", 2]; // 1P29 Optic
 		_box addItemCargoGlobal ["rhs_acc_1p63", 1]; // 1P63 Red dot
-		_box addItemCargoGlobal ["rhs_acc_grip_rk2", 1]; //RK2 Grip
-		_box addItemCargoGlobal ["rhs_acc_grip_ffg2", 1]; //FFG2 Grip
-		_box addItemCargoGlobal ["rhs_acc_2dpZenit", 5]; //Flashlight
-
-		//Uniform
-		_box addItemCargoGlobal ["rhs_uniform_flora_patchless_alt", 4]; //Alt Flora
-		_box addItemCargoGlobal ["rhs_6b23_ML_vydra_3m", 4]; //Tier 2 vest
-		_box addItemCargoGlobal ["rhs_6b27m_ml", 4]; //Tier 2 Helmet
-		_box addbackpackCargoGlobal ["rhs_assault_umbts", 4]; //Backpack
+		_box addItemCargoGlobal ["rhs_acc_2dpZenit", 7]; //Flashlight
 	};
 
-	//Tier 2 Blufor
-	case 4:
+	//Launchers tier 3 Opfor
+	case 3:
 	{
 		//Weapons
-		_box addItemCargoGlobal ["rhs_weap_m4a1_carryhandle", 4]; //M4A1
-		_box addItemCargoGlobal ["rhs_weap_m4a1_d_mstock", 2]; //M4A1 Desert
-		_box addItemCargoGlobal ["rhs_weap_m240B", 1]; //M240B
-		_box addItemCargoGlobal ["rhs_weap_m24sws_blk", 1]; //M24 SWS Black
+		_box addItemCargoGlobal ["rhs_weap_rpg7", 2]; //RPG7V2
+		_box addItemCargoGlobal ["rhs_weap_rpg26", 2]; //RPG26
+		_box addItemCargoGlobal ["rhs_weap_igla", 1]; //Igla AA
+
+		//Acc
+		_box addItemCargoGlobal ["rhs_acc_pgo7v3", 2]; //PGO7V3 rpg optic
+
+		//Ammo
+		_box addItemCargoGlobal ["rhs_rpg7_PG7VL_mag", 6]; //standard rocket
+		_box addItemCargoGlobal ["rhs_rpg7_OG7V_mag", 4]; //HE FRAG
+		_box addItemCargoGlobal ["rhs_rpg7_PG7VR_mag", 2]; //Tandem
+		_box addItemCargoGlobal ["rhs_rpg7_TBG7V_mag", 2]; //Thermobaric
+		_box addItemCargoGlobal ["rhs_mag_9k38_rocket", 3]; //Igla Rocket
+	};
+
+/*****************************************************
+BLUFOR
+*******************************************************/
+	// Uniform  tier 3 Blufor
+	case 4:
+	{
+		//Uniform
+		_box addItemCargoGlobal ["rhsgref_uniform_woodland", 7]; //M81 Woodland uniform
+		_box addItemCargoGlobal ["rhsgref_otv_khaki", 7]; //Khaki OTV
+		_box addItemCargoGlobal ["rhsusf_ach_helmet_M81", 7]; //ACH M81
+		_box addbackpackCargoGlobal ["rhsgref_wdl_alicepack", 7]; //Backpack M81
+		_box addItemCargoGlobal ["rhsusf_ANPVS_15", 7]; //NVG
+	};
+
+	//Guns Tier 2 Blufor
+	case 5:
+	{
+		//Weapons
+		_box addItemCargoGlobal ["rhs_weap_m16a4_carryhandle", 5]; //M16A4
+		_box addItemCargoGlobal ["rhs_weap_m249_pip_L_para", 1]; //M249
+		_box addItemCargoGlobal ["rhs_weap_m14ebrri", 1]; //M14 ebr
 		_box addItemCargoGlobal ["rhsusf_weap_m9", 5]; //M9
 
 		//Ammo
 		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 10]; //5.55 x 45mm NATO Ammo
 		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 4]; //5.56 x 45 NATO Red Tracer
-		_box addItemCargoGlobal ["rhsusf_100Rnd_762x51_m80a1epr", 3]; //7.62 x 51mm M80A1EPR M240 100 round belt
-		_box addItemCargoGlobal ["rhsusf_100Rnd_762x51_m62_tracer", 1]; //7.62 x 51mm M80A1EPR M240 100 round belt
-		_box addItemCargoGlobal ["rhsusf_5Rnd_762x51_m993_Mag", 8]; // 7.62 x 51mm M24 Ammo
+		_box addItemCargoGlobal ["rhs_200rnd_556x45_M_SAW", 3]; //7.62 x 51mm M80A1EPR M240 100 round belt
+		_box addItemCargoGlobal ["rhs_200rnd_556x45_T_SAW", 1]; //7.62 x 51mm M80A1EPR M240 100 round belt
+		_box addItemCargoGlobal ["rhsusf_20Rnd_762x51_m118_special_Mag", 8]; // 7.62 x 51mm M24 Ammo
 		_box addItemCargoGlobal ["rhsusf_mag_15Rnd_9x19_FMJ", 10]; // M9 Ammo
 
 		//Accessories
-		_box addItemCargoGlobal ["rhsusf_acc_LEUPOLDMK4", 1]; //Leopold MK4 3.5 - 10x
+		_box addItemCargoGlobal ["rhsusf_acc_ACOG_MDO", 1]; //marksman ACOG
 		_box addItemCargoGlobal ["rhsusf_acc_ACOG", 2]; //ACOG Optic
 		_box addItemCargoGlobal ["rhsusf_acc_compm4", 1]; // CompM4 Red dot
 		_box addItemCargoGlobal ["rhsusf_acc_grip3", 1]; //Vertical Grip
 		_box addItemCargoGlobal ["rhsusf_acc_grip2", 2]; //AFG Grip
-		_box addItemCargoGlobal ["rhsusf_acc_M952V", 5]; //Flashlight
-
-		//Uniform
-		_box addItemCargoGlobal ["rhs_uniform_cu_ucp", 4]; //UCP
-		_box addItemCargoGlobal ["rhsusf_iotv_ucp_Rifleman", 4]; //IOTV UCP
-		_box addItemCargoGlobal ["rhsusf_ach_helmet_ucp", 4]; //ACH UCP
-		_box addbackpackCargoGlobal ["rhsusf_assault_eagleaiii_ucp", 4]; //Backpack UCP
+		_box addItemCargoGlobal ["rhsusf_acc_M952V", 7]; //Flashlight
+		_box addItemCargoGlobal ["rhsusf_acc_harris_bipod", 1]; //bipod
 	};
 
-	//Tier 3 Opfor
-	case 5:
-	{
-		//Weapons
-		_box addItemCargoGlobal ["rhs_weap_ak74mr_gp25", 2]; //AK74MR with GP25
-		_box addItemCargoGlobal ["rhs_weap_ak74mr", 2]; //AK74MR
-		_box addItemCargoGlobal ["rhs_weap_ak74m_zenitco01", 4]; //AK74M Zentico
-		_box addItemCargoGlobal ["rhs_weap_ak105_zenitco01", 1]; //AK105 Zentico
-		_box addItemCargoGlobal ["rhs_weap_asval_grip", 3]; //AS Val Grip
-		_box addItemCargoGlobal ["rhs_weap_t5000", 1]; //T5000
-		_box addItemCargoGlobal ["rhs_weap_pya", 2]; //MP-443 Grach
-
-		//Ammo
-		_box addItemCargoGlobal ["rhs_30Rnd_545x39_7N22_AK", 10]; //5.45 x 39mm AK74 Ammo
-		_box addItemCargoGlobal ["rhs_30Rnd_545x39_AK_green", 4]; //5.45 x 39mm AK74 Ammo Green Tracer
-		_box addItemCargoGlobal ["rhs_5Rnd_338lapua_t5000", 8]; // T5000 Ammo
-		_box addItemCargoGlobal ["rhs_10rnd_9x39mm_SP6", 6]; // AS VAL Ammo
-		_box addItemCargoGlobal ["rhs_mag_9x19_17", 4]; // MP-443 Ammo
-		_box addItemCargoGlobal ["rhs_VG40MD_White", 5]; // 40mm White Smoke
-		_box addItemCargoGlobal ["rhs_GDM40", 5]; // 40mm Fast White Smoke
-		_box addItemCargoGlobal ["rhs_VG40OP_green", 5]; // 40mm Green Flare
-		_box addItemCargoGlobal ["rhs_VOG25", 5]; // 40mm HE FRAG
-		_box addItemCargoGlobal ["rhs_VOG25P", 5]; // 40mm HET Airburst
-
-		//Accessories
-		_box addItemCargoGlobal ["rhs_acc_dh520x56", 1]; //DH520x56
-		_box addItemCargoGlobal ["rhs_acc_rakursPM", 2]; // CompM4 Aimpoint
-		_box addItemCargoGlobal ["rhs_acc_grip_rk6", 2]; //RK6 Grip
-		_box addItemCargoGlobal ["rhs_acc_npz", 4]; //NPZ rail
-		_box addItemCargoGlobal ["rhs_acc_1p78", 2]; //1P78 Optic
-		_box addItemCargoGlobal ["rhsusf_acc_ACOG", 1]; //ACOG Optic
-		_box addItemCargoGlobal ["rhs_acc_rakursPM", 2]; // Rakurs
-		_box addItemCargoGlobal ["rhs_acc_grip_rk2", 1]; //RK2 Grip
-		_box addItemCargoGlobal ["rhs_acc_grip_ffg2", 1]; //FFG2 Grip
-		_box addItemCargoGlobal ["rhsusf_acc_grip1", 2]; //GripPod
-		_box addItemCargoGlobal ["rhs_acc_perst3_2dp_light", 3]; //Light/Laser
-		_box addItemCargoGlobal ["rhs_acc_tgp", 2]; //Supressor
-		_box addItemCargoGlobal ["rhs_acc_harris_swivel", 1]; //Harris Bipod
-
-		//Uniform
-		_box addItemCargoGlobal ["rhs_1PN138", 2]; //NVG
-		_box addItemCargoGlobal ["rhs_uniform_emr_des_patchless", 4]; //Alt Flora
-		_box addItemCargoGlobal ["rhs_6b13_EMR_6sh92_vog", 4]; //Tier 3 vest
-		_box addItemCargoGlobal ["rhs_6b47", 4]; //Tier 3 Helmet
-	};
-
-	//Tier 3 Blufor
+	//Launchers Tier 3 Blufor
 	case 6:
 	{
 		//Weapons
-		_box addItemCargoGlobal ["rhs_weap_hk416d145_m320", 1]; //HK M416 with M320
-		_box addItemCargoGlobal ["rhs_weap_hk416d145", 2]; //HK M416
-		_box addItemCargoGlobal ["rhs_weap_m4a1_blockII", 3]; //M4A1 Block II
-		_box addItemCargoGlobal ["rhs_weap_XM2010", 1]; //M2010
-		_box addItemCargoGlobal ["rhsusf_weap_m9", 2]; //M9
+		_box addItemCargoGlobal ["rhs_weap_fgm148", 1]; //FGM148 Javelin
+		_box addItemCargoGlobal ["rhs_weap_maaws", 1]; //Carl Gustav
+		_box addItemCargoGlobal ["rhs_weap_m72a7", 2]; //M72A7 LAW
+		_box addItemCargoGlobal ["rhs_weap_fim92", 1]; //stinger AA
+
+		//Acc
+		_box addItemCargoGlobal ["rhs_optic_maaws", 1]; //maaws optic
 
 		//Ammo
-		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 10]; //5.55 x 45mm NATO Ammo
-		_box addItemCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 4]; //5.56 x 45 NATO Red Tracer
-		_box addItemCargoGlobal ["rhsusf_5Rnd_300winmag_xm2010", 8]; // .300 winmag M2010 Ammo
-		_box addItemCargoGlobal ["rhsusf_mag_15Rnd_9x19_FMJ", 4]; // M9 Ammo
-		_box addItemCargoGlobal ["rhs_mag_m714_White", 5]; // 40mm White Smoke
-		_box addItemCargoGlobal ["rhs_mag_m662_red", 5]; // 40mm Red Flare
-		_box addItemCargoGlobal ["rhs_mag_M441_HE", 5]; // 40mm HE
-		_box addItemCargoGlobal ["rhs_mag_M397_HET", 5]; // 40mm HET Airburst
-
-		//Accessories
-		_box addItemCargoGlobal ["rhsusf_acc_premier", 1]; //M8541A
-		_box addItemCargoGlobal ["rhsusf_acc_ACOG", 1]; //ACOG Optic
-		_box addItemCargoGlobal ["rhsusf_acc_compm4", 2]; // CompM4 Aimpoint
-		_box addItemCargoGlobal ["rhsusf_acc_grip1", 2]; //GripPod
-		_box addItemCargoGlobal ["rhsusf_acc_grip2", 2]; //AFG Grip
-		_box addItemCargoGlobal ["rhsusf_acc_grip2_tan", 2]; //AFG Grip Tan
-		_box addItemCargoGlobal ["rhsusf_acc_harris_bipod", 2]; //Harris Bipod
-		_box addItemCargoGlobal ["rhsusf_acc_nt4_black", 3]; //Supressor
-		_box addItemCargoGlobal ["rhsusf_acc_nt4_tan", 2]; //Supressor Tan
-		_box addItemCargoGlobal ["rhsusf_acc_anpeq15_bk_light", 3]; //Light/Laser
-
-		//Uniform
-		_box addItemCargoGlobal ["rhsusf_ANPVS_14", 2]; //NVG
-		_box addItemCargoGlobal ["rhs_uniform_cu_ocp", 4]; //OCP
-		_box addItemCargoGlobal ["rhsusf_spcs_ocp_rifleman", 4]; //SPCS OCP
-		_box addItemCargoGlobal ["rhsusf_mich_bare_norotos_arc_alt_tan", 4]; //Mich 2000 Norotos Arc
-		_box addbackpackCargoGlobal ["rhsusf_assault_eagleaiii_ocp", 4]; //Backpack OCP
+		_box addItemCargoGlobal ["rhs_mag_maaws_HEAT", 6]; //standard HEAT
+		_box addItemCargoGlobal ["rhs_mag_maaws_HEDP", 4]; //HEDP
+		_box addItemCargoGlobal ["rhs_mag_maaws_HE", 2]; //HE
+		_box addItemCargoGlobal ["rhs_fgm148_magazine_AT", 2]; //Javelin Rocket
+		_box addItemCargoGlobal ["rhs_fim92_mag", 3]; //Stinger Rocket
 	};
 
 	default
 	{
-		_box addItemCargoGlobal ["rhsusf_mag_7x45acp_MHP", 4]; // .45 ACP
-		_box addItemCargoGlobal ["rhs_mag_9x18_8_57N181S", 4]; // 9x18 Makarov
+		_box addItemCargoGlobal ["ACE_VMM3", 2]; // metal detector
+		_box addItemCargoGlobal ["SatchelCharge_Remote_Mag", 2]; // satchel demo charge
+		_box addItemCargoGlobal ["DemoCharge_Remote_Mag", 4]; // demoblock
+		_box addItemCargoGlobal ["ACE_DefusalKit", 2]; // ace defusal kit
 	};
 };
 
@@ -287,4 +212,3 @@ Blufor Weapons
 	- Suppressors
 
 */
-
