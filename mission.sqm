@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=460;
+		nextID=463;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={744.05408,18.644457,955.05548};
-		dir[]={-0.2854495,-0.53704208,0.79389066};
-		up[]={-0.18171291,0.84356076,0.50537461};
-		aside[]={0.94109887,3.2328535e-007,0.33838111};
+		pos[]={746.36975,9.0733843,959.06018};
+		dir[]={-0.44108525,-0.3588433,0.82272178};
+		up[]={-0.16956915,0.93339795,0.31628177};
+		aside[]={0.88141662,3.8300641e-007,0.47255567};
 	};
 };
 binarizationWanted=0;
@@ -31,14 +31,13 @@ addons[]=
 	"A3_Modules_F",
 	"A3_Characters_F",
 	"A3_Ui_F",
-	"A3_Structures_F_Civ_InfoBoards",
-	"rhs_c_a2port_car"
+	"A3_Structures_F_Civ_InfoBoards"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=8;
+		items=7;
 		class Item0
 		{
 			className="CUP_Misc_e_Config";
@@ -81,13 +80,6 @@ class AddonsMetaData
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
-		};
-		class Item7
-		{
-			className="rhs_c_a2port_car";
-			name="A2 ported cars";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -141,11 +133,36 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="Enh_ambientFlyby_speed";
+			expression="missionNamespace setVariable ['Enh_ambientFlyby_speed',_value]";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"STRING"
+						};
+					};
+					value="LIMITED";
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
 	class Intel
 	{
+		resistanceWest=0;
 		timeOfChanges=1800.0002;
 		startWeather=0.19999999;
 		startWind=0.1;
@@ -272,46 +289,6 @@ class Mission
 			type="Logic";
 		};
 		class Item4
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={730.64606,4.917027,972.57123};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="call{nul = [west_factory_1, -1, west] execVM ""R3F_LOG\USER_FUNCT\init_creation_factory.sqf"";}";
-				name="west_factory_1";
-			};
-			id=37;
-			type="Infostand_2_EP1";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="Enh_featureType";
-					expression="_this setFeatureType (parseNumber _value)";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item5
 		{
 			dataType="Group";
 			side="West";
@@ -723,7 +700,7 @@ class Mission
 			};
 			id=58;
 		};
-		class Item6
+		class Item5
 		{
 			dataType="Group";
 			side="East";
@@ -1092,7 +1069,7 @@ class Mission
 			};
 			id=301;
 		};
-		class Item7
+		class Item6
 		{
 			dataType="Marker";
 			position[]={656.138,4.3369999,966.78302};
@@ -1101,7 +1078,7 @@ class Mission
 			id=455;
 			atlOffset=0.00023078918;
 		};
-		class Item8
+		class Item7
 		{
 			dataType="Marker";
 			position[]={734.31097,4.3369999,989.422};
@@ -1110,7 +1087,7 @@ class Mission
 			id=456;
 			atlOffset=0.00023078918;
 		};
-		class Item9
+		class Item8
 		{
 			dataType="Object";
 			class PositionInfo
@@ -1122,7 +1099,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""West"",1]];}";
+				init="call{this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""West"",4]]; this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""West"",5]]; this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""West"",6]];}";
 			};
 			id=458;
 			type="Land_InfoStand_V1_F";
@@ -1150,20 +1127,185 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={746.50104,6.2316127,968.6958};
+				position[]={740.72498,4.9121332,969.71198};
+				angles[]={0,0.43662903,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				init="call{this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""East"",1]]; this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""East"",2]]; this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""East"",3]];}";
 			};
-			id=459;
-			type="RHS_BM21_VDV_01";
+			id=460;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item10
+		{
+			dataType="Group";
+			side="Independent";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={743.17102,4.3382082,964.85101};
+					};
+					side="Independent";
+					flags=7;
+					class Attributes
+					{
+						isPlayable=1;
+					};
+					id=462;
+					type="I_Survivor_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="Enh_featureType";
+							expression="_this setFeatureType (parseNumber _value)";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="0";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male05GRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.97000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="Enh_ambientAnimParams";
+							expression="	if (is3DEN) then {_this call BIS_fnc_ambientAnim__terminate};	[_this,_value] spawn	{		sleep 0.1;		private _unit = _this select 0;		private _value = _this select 1;		if (!(_value select 0 == '') && !isMultiplayer) then		{			[_unit,_value select 0,_value select 1,objNull,false,false] call BIS_fnc_ambientAnim;		};	}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="ASIS";
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=4;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=461;
 		};
 	};
 };

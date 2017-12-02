@@ -1,7 +1,7 @@
 _side = _this select 3 select 0;
 _case = _this select 3 select 1;
 
-private ["_side", "_case"];
+//private ["_side", "_case"];
 _dropArray = ["East","West"];
 
 _number = _case;
@@ -112,9 +112,9 @@ BLUFOR
 	case 4:
 	{
 		//Uniform
-		_box addItemCargoGlobal ["rhsgref_uniform_woodland", 7]; //M81 Woodland uniform
+		_box addItemCargoGlobal ["rhsgref_uniform_ERDL", 7]; //M81 Woodland uniform
 		_box addItemCargoGlobal ["rhsgref_otv_khaki", 7]; //Khaki OTV
-		_box addItemCargoGlobal ["rhsusf_ach_helmet_M81", 7]; //ACH M81
+		_box addItemCargoGlobal ["rhsgref_helmet_pasgt_erdl_rhino", 7]; //ACH M81
 		_box addbackpackCargoGlobal ["rhsgref_wdl_alicepack", 7]; //Backpack M81
 		_box addItemCargoGlobal ["rhsusf_ANPVS_15", 7]; //NVG
 	};
