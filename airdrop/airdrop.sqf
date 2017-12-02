@@ -170,9 +170,6 @@ BLUFOR
 waitUntil {(getPosATL _box) select 2 < 2};
 _signal = "SmokeShellRed" createVehicle position _box; _signal allowDamage false;
 
-sleep 300;
-deleteVehicle _box;
-
 /*
 Opfor Weapons:
 
