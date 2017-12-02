@@ -1,3 +1,6 @@
+_side = _this select 3 select 0;
+_case = _this select 3 select 1;
+
 private ["_side", "_case"];
 _dropArray = ["East","West"];
 
@@ -50,7 +53,7 @@ switch (_number) do
 		//Uniform
 		_box addItemCargoGlobal ["rhs_uniform_emr_patchless", 7]; //EMR bdu's
 		_box addItemCargoGlobal ["rhs_6b13_EMR_6sh92", 7]; //Flak vest with carrier rig EMR
-		_box addItemCargoGlobal ["rrhs_6b27m_digi", 7]; //EMR Helmet
+		_box addItemCargoGlobal ["rhs_6b27m_digi", 7]; //EMR Helmet
 		_box addbackpackCargoGlobal ["B_Carryall_oli", 7]; //Backpack
 		_box addItemCargoGlobal ["rhs_1PN138", 7]; //NVG
 	};
@@ -163,13 +166,13 @@ BLUFOR
 		_box addItemCargoGlobal ["rhs_fim92_mag", 3]; //Stinger Rocket
 	};
 
-	default
+	/*default
 	{
 		_box addItemCargoGlobal ["ACE_VMM3", 2]; // metal detector
 		_box addItemCargoGlobal ["SatchelCharge_Remote_Mag", 2]; // satchel demo charge
 		_box addItemCargoGlobal ["DemoCharge_Remote_Mag", 4]; // demoblock
 		_box addItemCargoGlobal ["ACE_DefusalKit", 2]; // ace defusal kit
-	};
+	};*/
 };
 
 

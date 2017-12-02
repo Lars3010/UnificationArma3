@@ -16,7 +16,7 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={740.89783,15.488125,955.09137};
+		pos[]={744.05408,18.644457,955.05548};
 		dir[]={-0.2854495,-0.53704208,0.79389066};
 		up[]={-0.18171291,0.84356076,0.50537461};
 		aside[]={0.94109887,3.2328535e-007,0.33838111};
@@ -1122,7 +1122,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction[""Buy Uniforms"", [""East"", 1]ExecVM ""airdrop.sqf""]; this addAction[""Buy Uniforms"", [""West"", 1]ExecVM ""airdrop.sqf""];}";
+				init="call{this addAction[""Buy Uniforms"", ""airdrop.sqf"", [""West"",1]];}";
 			};
 			id=458;
 			type="Land_InfoStand_V1_F";
