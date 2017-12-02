@@ -1,10 +1,8 @@
-_dropArray = ["drop_0","drop_1","drop_2","drop_3","drop_4","drop_5","drop_6","drop_7","drop_8","drop_9","drop_10","drop_11","drop_12","drop_13","drop_14","drop_15","drop_16","drop_17","drop_18"
-,"drop_19","drop_20","drop_21","drop_22","drop_23","drop_24","drop_25","drop_26"];
+private ["_side", "_case"];
+_dropArray = ["East","West"];
 
-
-_dropNumber = [1,2,3,4,5,6]; //,7,8
-_number = _dropNumber call bis_fnc_selectRandom;
-_location = _dropArray call bis_fnc_selectRandom;
+_number = _case;
+_location = _side
 _cargo = "B_supplyCrate_F";
 
 _box = _cargo createVehicle getMarkerpos _location;_box setPos [getMarkerPos _location select 0, getMarkerPos _location select 1, 250];[objnull, _box] call BIS_fnc_curatorobjectedited;
@@ -14,6 +12,30 @@ clearItemCargoGlobal _box;
 clearWeaponCargoGlobal _box;
 clearBackpackCargoGlobal _box;
 
+_costbase = 3000;
+// Calculates the amount of cash to subtract based on crate tier
+if (_side == "West") then {
+_cost = _costbase * (_case - 3);
+} else {
+_cost = _costbase * _case;
+};
+
+// Chooses the side to subtract that cash from
+if (_side == "West") then {
+_credits = west_factory getVariable "R3F_LOG_CF_credits";
+
+_credits = _credits + _cost;
+
+west_factory setVariable ["R3F_LOG_CF_credits", _credits, true];
+} else {
+_credits = east_factory getVariable "R3F_LOG_CF_credits";
+
+_credits = _credits + _cost;
+
+east_factory setVariable ["R3F_LOG_CF_credits", _credits, true];};
+};
+
+// fetches the contents of the crate
 switch (_number) do
 {
 	// Uniform tier 3 Opfor
