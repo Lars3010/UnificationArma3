@@ -1122,7 +1122,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="call{this addAction[""Buy Uniforms"", [""East"", 1]ExecVM""airdrop/airdrop.sqf""]; this addAction[""Buy Uniforms"", [""West"", 1]ExecVM""airdrop/airdrop.sqf""];}";
+				init="call{this addAction[""Buy Uniforms"", [""East"", 1]ExecVM ""airdrop.sqf""]; this addAction[""Buy Uniforms"", [""West"", 1]ExecVM ""airdrop.sqf""];}";
 			};
 			id=458;
 			type="Land_InfoStand_V1_F";
