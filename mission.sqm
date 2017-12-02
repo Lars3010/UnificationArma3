@@ -8,14 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=455;
+		nextID=460;
+	};
+	class MarkerIDProvider
+	{
+		nextID=2;
 	};
 	class Camera
 	{
-		pos[]={708.74725,8.5453377,1194.0107};
-		dir[]={-0.33810306,-0.21091457,0.91732097};
-		up[]={-0.072858445,0.97817868,0.19767436};
-		aside[]={0.93754661,2.2490276e-006,0.34560794};
+		pos[]={740.89783,15.488125,955.09137};
+		dir[]={-0.2854495,-0.53704208,0.79389066};
+		up[]={-0.18171291,0.84356076,0.50537461};
+		aside[]={0.94109887,3.2328535e-007,0.33838111};
 	};
 };
 binarizationWanted=0;
@@ -25,13 +29,16 @@ addons[]=
 	"CUP_CAMP_Armory_Misc_Infostands",
 	"Desert",
 	"A3_Modules_F",
-	"A3_Characters_F"
+	"A3_Characters_F",
+	"A3_Ui_F",
+	"A3_Structures_F_Civ_InfoBoards",
+	"rhs_c_a2port_car"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=5;
+		items=8;
 		class Item0
 		{
 			className="CUP_Misc_e_Config";
@@ -60,6 +67,27 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item7
+		{
+			className="rhs_c_a2port_car";
+			name="A2 ported cars";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
 		};
 	};
 };
@@ -140,7 +168,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=7;
+		items=11;
 		class Item0
 		{
 			dataType="Object";
@@ -1063,6 +1091,79 @@ class Mission
 			{
 			};
 			id=301;
+		};
+		class Item7
+		{
+			dataType="Marker";
+			position[]={656.138,4.3369999,966.78302};
+			name="East";
+			type="Empty";
+			id=455;
+			atlOffset=0.00023078918;
+		};
+		class Item8
+		{
+			dataType="Marker";
+			position[]={734.31097,4.3369999,989.422};
+			name="West";
+			type="Empty";
+			id=456;
+			atlOffset=0.00023078918;
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={736.01501,4.9121332,971.50598};
+				angles[]={0,0.43662903,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="call{this addAction[""Buy Uniforms"", [""East"", 1]ExecVM""airdrop/airdrop.sqf""]; this addAction[""Buy Uniforms"", [""West"", 1]ExecVM""airdrop/airdrop.sqf""];}";
+			};
+			id=458;
+			type="Land_InfoStand_V1_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="Enh_featureType";
+					expression="_this setFeatureType (parseNumber _value)";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={746.50104,6.2316127,968.6958};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=459;
+			type="RHS_BM21_VDV_01";
 		};
 	};
 };

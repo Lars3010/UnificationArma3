@@ -24,13 +24,13 @@ _cost = _costbase * _case;
 if (_side == "West") then {
 _credits = west_factory getVariable "R3F_LOG_CF_credits";
 
-_credits = _credits + _cost;
+_credits = _credits - _cost;
 
 west_factory setVariable ["R3F_LOG_CF_credits", _credits, true];
 } else {
 _credits = east_factory getVariable "R3F_LOG_CF_credits";
 
-_credits = _credits + _cost;
+_credits = _credits - _cost;
 
 east_factory setVariable ["R3F_LOG_CF_credits", _credits, true];};
 };
