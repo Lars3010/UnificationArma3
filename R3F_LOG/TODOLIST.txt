@@ -1,13 +1,12 @@
 ADD
-- Disable regular towing/sling loading and replace with advanced towing mods
 - Add triggers in territory to set to hostile during black ops
-- Create dialog for diplomacy
-	- declare war
-	- call for meeting
 - cash making buildings
 - add airdrops
+- add buyable zone markers for warehouse and vehicle depot
+- rig vehicle spawn system to work with distant markers
+- custom a.i. faction
+- buyable keypoint based ai defenders/patrol
+- instantiate ai based on nearby players
 
 FIX
 - disable sendback
-- set landmines unknown
-- Configure arsenals properly
